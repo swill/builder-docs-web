@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Plate &amp; Case Builder - Documentation</title>
+    <link>http://builder-docs.swillkb.com/</link>
+    <description>Recent content on Plate &amp; Case Builder - Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://builder-docs.swillkb.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Documentation Overview</title>
+      <link>http://builder-docs.swillkb.com/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://builder-docs.swillkb.com/</guid>
+      <description>
+
+&lt;h2 id=&#34;builder-swillkb-com&#34;&gt;builder.swillkb.com&lt;/h2&gt;
+
+&lt;p&gt;If it was not already obvious, the purpose of this site it to document the features of the &lt;a href=&#34;http://builder.swillkb.com&#34; target=&#34;_blank&#34;&gt;builder.swillkb.com&lt;/a&gt; keyboard CAD generation tool.&lt;/p&gt;
+
+&lt;h2 id=&#34;contribute&#34;&gt;Contribute&lt;/h2&gt;
+
+&lt;p&gt;The content of this website is maintained on Github at &amp;hellip;, so please feel free to contribute.  We will do our best to keep the content up-to-date with the functionality, but 100% coverage of the features will be a work in progress.&lt;/p&gt;
+
+&lt;h3 id=&#34;how-to-contribute&#34;&gt;How to Contribute&lt;/h3&gt;
+
+&lt;p&gt;In order to contribute, you will need to fork the Github repository &amp;hellip;, make changes and then submit a Pull Request with the changes.  Once &lt;code&gt;swill&lt;/code&gt; has a chance to review the changes, he will approve the pull request and will publish the changes to the live site.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Units &amp; Dimensions</title>
+      <link>http://builder-docs.swillkb.com/units-dimensions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://builder-docs.swillkb.com/units-dimensions/</guid>
+      <description>
+
+&lt;h2 id=&#34;key-sizing-spacing&#34;&gt;Key Sizing &amp;amp; Spacing&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Keyboard Layouts</title>
+      <link>http://builder-docs.swillkb.com/keyboard-layouts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://builder-docs.swillkb.com/keyboard-layouts/</guid>
+      <description>
+
+&lt;h2 id=&#34;layout-format&#34;&gt;Layout Format&lt;/h2&gt;
+
+&lt;h2 id=&#34;layout-overrides&#34;&gt;Layout Overrides&lt;/h2&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
