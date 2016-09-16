@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Plate &amp; Case Builder - Documentation</title>
-    <link>http://builder-docs.swillkb.com/</link>
+    <link>http://swill.github.io/builder-docs-web/</link>
     <description>Recent content on Plate &amp; Case Builder - Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://builder-docs.swillkb.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://swill.github.io/builder-docs-web/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Documentation Overview</title>
-      <link>http://builder-docs.swillkb.com/</link>
+      <link>http://swill.github.io/builder-docs-web/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://builder-docs.swillkb.com/</guid>
+      <guid>http://swill.github.io/builder-docs-web/</guid>
       <description>
 
 &lt;h2 id=&#34;builder-swillkb-com&#34;&gt;builder.swillkb.com&lt;/h2&gt;
@@ -32,10 +32,10 @@
     
     <item>
       <title>Units &amp; Dimensions</title>
-      <link>http://builder-docs.swillkb.com/units-dimensions/</link>
+      <link>http://swill.github.io/builder-docs-web/units-dimensions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://builder-docs.swillkb.com/units-dimensions/</guid>
+      <guid>http://swill.github.io/builder-docs-web/units-dimensions/</guid>
       <description>
 
 &lt;h2 id=&#34;key-sizing-spacing&#34;&gt;Key Sizing &amp;amp; Spacing&lt;/h2&gt;
@@ -44,10 +44,10 @@
     
     <item>
       <title>Keyboard Layouts</title>
-      <link>http://builder-docs.swillkb.com/keyboard-layouts/</link>
+      <link>http://swill.github.io/builder-docs-web/keyboard-layouts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://builder-docs.swillkb.com/keyboard-layouts/</guid>
+      <guid>http://swill.github.io/builder-docs-web/keyboard-layouts/</guid>
       <description>
 
 &lt;h2 id=&#34;layout-format&#34;&gt;Layout Format&lt;/h2&gt;
