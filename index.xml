@@ -134,6 +134,40 @@
 &lt;p&gt;&lt;img src=&#34;http://builder-docs.swillkb.com/images/contribute/github_submit_pr.png&#34; alt=&#34;alt text&#34; title=&#34;Submit Pull Request&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Once the pull request has been reviewed, it will be approved and the changes will get published to the live site.&lt;/p&gt;
+
+&lt;h2 id=&#34;content-layout&#34;&gt;Content Layout&lt;/h2&gt;
+
+&lt;p&gt;Each page has its own Markdown file in the &lt;code&gt;./content/&lt;/code&gt; directory.  The name of the file will be used as the URL slug, so please use hyphens (&lt;code&gt;-&lt;/code&gt;) if you need a separator.&lt;/p&gt;
+
+&lt;p&gt;Each page has some metadata at the top of the Markdown file.  More details can be found in the &lt;a href=&#34;https://gohugo.io/content/front-matter/&#34;&gt;&lt;code&gt;front matter&lt;/code&gt; documentation&lt;/a&gt; for Hugo, but the main ones to note are the following:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;---
+title: The Page Title
+weight: 50
+---
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The &lt;code&gt;title&lt;/code&gt; will be the title of the page.
+The &lt;code&gt;weight&lt;/code&gt; is used to determine the page order.&lt;/p&gt;
+
+&lt;p&gt;Review the other pages to better understand what values to use for the &lt;code&gt;weight&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;menu-entries&#34;&gt;Menu Entries&lt;/h2&gt;
+
+&lt;p&gt;The top level menu entries on the left are manually specified in the &lt;code&gt;./config.toml&lt;/code&gt; file.  The sub-menu items are automatically created based on the header elements on that page.&lt;/p&gt;
+
+&lt;p&gt;You would place something like the following in the menu section of the &lt;code&gt;./config.toml&lt;/code&gt; file.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;[[menu.main]]
+	name   = &amp;quot;New Top Level Menu&amp;quot;
+	url    = &amp;quot;page-url/&amp;quot;
+	weight = 50
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div class=&#34;admonition note&#34;&gt;
+&lt;p class=&#34;admonition-title&#34;&gt;Note&lt;/p&gt;
+&lt;p&gt;The trailing &lt;code&gt;/&lt;/code&gt; is required for all links so I have more hosting options.&lt;/p&gt;
+&lt;/div&gt;
 </description>
     </item>
     

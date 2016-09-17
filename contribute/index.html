@@ -306,6 +306,40 @@
 
 <p>Once the pull request has been reviewed, it will be approved and the changes will get published to the live site.</p>
 
+<h2 id="content-layout">Content Layout</h2>
+
+<p>Each page has its own Markdown file in the <code>./content/</code> directory.  The name of the file will be used as the URL slug, so please use hyphens (<code>-</code>) if you need a separator.</p>
+
+<p>Each page has some metadata at the top of the Markdown file.  More details can be found in the <a href="https://gohugo.io/content/front-matter/"><code>front matter</code> documentation</a> for Hugo, but the main ones to note are the following:</p>
+
+<pre><code class="language-yaml">---
+title: The Page Title
+weight: 50
+---
+</code></pre>
+
+<p>The <code>title</code> will be the title of the page.
+The <code>weight</code> is used to determine the page order.</p>
+
+<p>Review the other pages to better understand what values to use for the <code>weight</code>.</p>
+
+<h2 id="menu-entries">Menu Entries</h2>
+
+<p>The top level menu entries on the left are manually specified in the <code>./config.toml</code> file.  The sub-menu items are automatically created based on the header elements on that page.</p>
+
+<p>You would place something like the following in the menu section of the <code>./config.toml</code> file.</p>
+
+<pre><code class="language-toml">[[menu.main]]
+	name   = &quot;New Top Level Menu&quot;
+	url    = &quot;page-url/&quot;
+	weight = 50
+</code></pre>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The trailing <code>/</code> is required for all links so I have more hosting options.</p>
+</div>
+
 
 			<aside class="copyright" role="note">
 				
