@@ -9,24 +9,34 @@
     <atom:link href="http://builder-docs.swillkb.com/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Documentation Overview</title>
+      <title>Introduction</title>
       <link>http://builder-docs.swillkb.com/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://builder-docs.swillkb.com/</guid>
       <description>
 
+&lt;p&gt;The documentation on this site is for the Plate &amp;amp; Case Builder available at &lt;a href=&#34;http://builder.swillkb.com&#34; target=&#34;_blank&#34;&gt;builder.swillkb.com&lt;/a&gt;.&lt;/p&gt;
+
 &lt;h2 id=&#34;builder-swillkb-com&#34;&gt;builder.swillkb.com&lt;/h2&gt;
 
-&lt;p&gt;If it was not already obvious, the purpose of this site it to document the features of the &lt;a href=&#34;http://builder.swillkb.com&#34; target=&#34;_blank&#34;&gt;builder.swillkb.com&lt;/a&gt; keyboard CAD generation tool.&lt;/p&gt;
+&lt;p&gt;The Plate &amp;amp; Case Builder (builder) is a tool to aid in the design and creation of custom keyboards.  The builder generates CAD files to be cut by a laser cutter.&lt;/p&gt;
 
-&lt;h2 id=&#34;contribute&#34;&gt;Contribute&lt;/h2&gt;
+&lt;p&gt;Keyboard layouts are created at &lt;a href=&#34;http://www.keyboard-layout-editor.com/&#34; target=&#34;_blank&#34;&gt;keyboard-layout-editor.com&lt;/a&gt; (KLE) and the &lt;code&gt;Raw data&lt;/code&gt; is &lt;strong&gt;copied&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;The content of this website is maintained on Github at &amp;hellip;, so please feel free to contribute.  We will do our best to keep the content up-to-date with the functionality, but 100% coverage of the features will be a work in progress.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://builder-docs.swillkb.com/images/index/kle.png&#34; alt=&#34;alt text&#34; title=&#34;Keyboard Layout Editor&#34; /&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;how-to-contribute&#34;&gt;How to Contribute&lt;/h3&gt;
+&lt;p&gt;Then the layout is &lt;strong&gt;pasted&lt;/strong&gt; into the builder.&lt;/p&gt;
 
-&lt;p&gt;In order to contribute, you will need to fork the Github repository &amp;hellip;, make changes and then submit a Pull Request with the changes.  Once &lt;code&gt;swill&lt;/code&gt; has a chance to review the changes, he will approve the pull request and will publish the changes to the live site.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://builder-docs.swillkb.com/images/index/layout.png&#34; alt=&#34;alt text&#34; title=&#34;Keyboard Layout&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Case details are specified.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://builder-docs.swillkb.com/images/index/options.png&#34; alt=&#34;alt text&#34; title=&#34;Options&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then your custom plate and case is drawn.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://builder-docs.swillkb.com/images/index/plate.png&#34; alt=&#34;alt text&#34; title=&#34;Plate&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -38,21 +48,92 @@
       <guid>http://builder-docs.swillkb.com/units-dimensions/</guid>
       <description>
 
+&lt;p&gt;The content is still a work-in-progress, so some of these titles are just idea place holders&amp;hellip;&lt;/p&gt;
+
 &lt;h2 id=&#34;key-sizing-spacing&#34;&gt;Key Sizing &amp;amp; Spacing&lt;/h2&gt;
 </description>
     </item>
     
     <item>
-      <title>Keyboard Layouts</title>
-      <link>http://builder-docs.swillkb.com/keyboard-layouts/</link>
+      <title>Features</title>
+      <link>http://builder-docs.swillkb.com/features/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://builder-docs.swillkb.com/keyboard-layouts/</guid>
+      <guid>http://builder-docs.swillkb.com/features/</guid>
       <description>
 
-&lt;h2 id=&#34;layout-format&#34;&gt;Layout Format&lt;/h2&gt;
+&lt;p&gt;The builder has the following features available when creating keyboard layouts.&lt;/p&gt;
 
-&lt;h2 id=&#34;layout-overrides&#34;&gt;Layout Overrides&lt;/h2&gt;
+&lt;h2 id=&#34;plate-layout&#34;&gt;Plate Layout&lt;/h2&gt;
+
+&lt;h2 id=&#34;switch-type&#34;&gt;Switch Type&lt;/h2&gt;
+
+&lt;h2 id=&#34;stabilizer-type&#34;&gt;Stabilizer Type&lt;/h2&gt;
+
+&lt;h2 id=&#34;case-type&#34;&gt;Case Type&lt;/h2&gt;
+
+&lt;h2 id=&#34;hole-diameter&#34;&gt;Hole Diameter&lt;/h2&gt;
+
+&lt;div class=&#34;admonition note&#34;&gt;
+&lt;p class=&#34;admonition-title&#34;&gt;Note&lt;/p&gt;
+&lt;p&gt;Only applies to the &lt;code&gt;Poker&lt;/code&gt; case type.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;usb-cutout&#34;&gt;USB Cutout&lt;/h2&gt;
+
+&lt;div class=&#34;admonition note&#34;&gt;
+&lt;p class=&#34;admonition-title&#34;&gt;Note&lt;/p&gt;
+&lt;p&gt;Only applies to the &lt;code&gt;Sandwich&lt;/code&gt; case type.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;mount-holes&#34;&gt;Mount Holes&lt;/h2&gt;
+
+&lt;div class=&#34;admonition note&#34;&gt;
+&lt;p class=&#34;admonition-title&#34;&gt;Note&lt;/p&gt;
+&lt;p&gt;Only applies to the &lt;code&gt;Sandwich&lt;/code&gt; case type.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;edge-padding&#34;&gt;Edge Padding&lt;/h2&gt;
+
+&lt;h2 id=&#34;plate-corners&#34;&gt;Plate Corners&lt;/h2&gt;
+
+&lt;h2 id=&#34;kerf&#34;&gt;Kerf&lt;/h2&gt;
+
+&lt;h2 id=&#34;line&#34;&gt;Line&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Contribute</title>
+      <link>http://builder-docs.swillkb.com/contribute/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://builder-docs.swillkb.com/contribute/</guid>
+      <description>
+
+&lt;p&gt;The content of this website is maintained on Github at &lt;a href=&#34;https://github.com/swill/builder-docs&#34;&gt;github.com/swill/builder-docs&lt;/a&gt;, please feel free to contribute.  We will do our best to keep the content up-to-date with the functionality, but 100% coverage of the features will be a work in progress.&lt;/p&gt;
+
+&lt;h2 id=&#34;how-to-contribute&#34;&gt;How to Contribute&lt;/h2&gt;
+
+&lt;p&gt;To contribute, you will need to fork the Github repository &lt;a href=&#34;https://github.com/swill/builder-docs&#34;&gt;github.com/swill/builder-docs&lt;/a&gt;, and make changes in your own fork.&lt;br /&gt;
+&lt;img src=&#34;http://builder-docs.swillkb.com/images/contribute/github_fork.png&#34; alt=&#34;alt text&#34; title=&#34;Fork on Github&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Changes can be done by editing the files directly in the Github UI in your fork.&lt;br /&gt;
+&lt;img src=&#34;http://builder-docs.swillkb.com/images/contribute/github_edit.png&#34; alt=&#34;alt text&#34; title=&#34;Edit on Github&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Once finished editing the files, you will need to commit your changes.
+&lt;img src=&#34;http://builder-docs.swillkb.com/images/contribute/github_commit.png&#34; alt=&#34;alt text&#34; title=&#34;Commit change&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Once finished making changes, create a new Pull Request to submit the changes back to &lt;code&gt;swill&lt;/code&gt;s repository.&lt;/p&gt;
+
+&lt;p&gt;Click the &lt;code&gt;New Pull Request&lt;/code&gt; button on the &lt;code&gt;Pull Requests&lt;/code&gt; tab.
+&lt;img src=&#34;http://builder-docs.swillkb.com/images/contribute/github_create_pr.png&#34; alt=&#34;alt text&#34; title=&#34;Create Pull Request&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Click the &lt;code&gt;Create Pull Request&lt;/code&gt; button to submit the changes to my repository.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://builder-docs.swillkb.com/images/contribute/github_submit_pr.png&#34; alt=&#34;alt text&#34; title=&#34;Submit Pull Request&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Once the pull request has been reviewed, it will be approved and the changes will get published to the live site.&lt;/p&gt;
 </description>
     </item>
     
