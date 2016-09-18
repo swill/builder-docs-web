@@ -9,7 +9,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=10" />
-    <title>Features - Plate &amp; Case Builder - Documentation</title>
+    <title>Features - Docs - Plate &amp; Case Builder</title>
     <meta name="generator" content="Hugo 0.16" />
 
     
@@ -285,6 +285,50 @@
 <p>The builder has the following features available when creating keyboard layouts.</p>
 
 <h2 id="plate-layout">Plate Layout</h2>
+
+<p>The keyboard layout is specified by using the <code>Raw data</code> from the <a href="http://www.keyboard-layout-editor.com/" target="_blank">keyboard-layout-editor.com</a> (KLE) tool.  The data from KLE defines the layout of the keyboard, or the footprint of the keys.</p>
+
+<p><img src="http://builder-docs.swillkb.com/images/features/layout.png" alt="layout" title="Keyboard Layout" /></p>
+
+<p>Once you have a layout specified, you can modify individual keys by adding or editing the key&rsquo;s details object.  This details object is a set of parameters defined inside curly brackets before the key. For example, <em>Tab</em> is defined as <code>{w:1.5},&quot;Tab&quot;</code>.</p>
+
+<p>The following parameters can be specified to override the default settings on individual keys.</p>
+
+<ul>
+<li><p><strong>Rotate Switch Cutout <code>{_r:&lt;degrees&gt;}</code>:</strong>  Example, <code>{_r:90},&quot;&quot;</code>.  Rotate the switch cutout independent of the
+stabilizer cutout (assuming there is one).<br />
+Set in <a href="#switch-type">Switch Type</a> / Adding <code>_r:90</code><br />
+<img src="http://builder-docs.swillkb.com/images/features/rotate_switch.png" alt="rotate_switch" title="Rotate Switch" /></p></li>
+
+<li><p><strong>Rotate Stabilizer Cutout <code>{_rs:&lt;degrees&gt;}</code>:</strong>  Example, <code>{_rs:180},&quot;&quot;</code>.  Rotate the stabilizer cutout independent of the switch cutout.<br />
+Set in <a href="#stabilizer-type">Stabilizer Type</a> / Adding <code>_rs:180</code><br />
+<img src="http://builder-docs.swillkb.com/images/features/rotate_stab.png" alt="rotate_stab" title="Rotate Stabilizer" /></p></li>
+
+<li><p><strong>Switch Cutout Type <code>{_t:&lt;1-4&gt;}</code>:</strong>  Example, <code>{_t:1},&quot;&quot;</code>.  Numbers are in the same order as the images.<br />
+Set in <a href="#switch-type">Switch Type</a> / Adding <code>_t:1</code><br />
+<img src="http://builder-docs.swillkb.com/images/features/change_switch.png" alt="change_switch" title="Change Switch Type" /></p></li>
+
+<li><p><strong>Stabilizer Cutout Type <code>{_s:&lt;0-4&gt;}</code>:</strong>  Example, <code>{_s:3},&quot;&quot;</code>.  Numbers are in the same order as the dropdown list.<br />
+Set in <a href="#stabilizer-type">Stabilizer Type</a> / Adding <code>_s:3</code><br />
+<img src="http://builder-docs.swillkb.com/images/features/change_stab.png" alt="change_stab" title="Change Stabilizer Type" /></p></li>
+
+<li><p><strong>Cutting Kerf <code>{_k:&lt;mm&gt;}</code>:</strong>  Example, <code>{_k:0.25},&quot;&quot;</code>.  The kerf value for an individual switch/stabilizer cutout,
+this overrides the value set in the <a href="#kerf">Kerf</a> section.  Values are in mm (without the unit).<br />
+Set in <a href="#kerf">Kerf</a> / Adding <code>_k:1</code><br />
+<img src="http://builder-docs.swillkb.com/images/features/change_kerf.png" alt="change_kerf" title="Change Kerf" /></p></li>
+</ul>
+
+<p>Here is an example using all of them together: <code>{_r:90, _rs:180, _t:0, _s:2, _k:0.25},&quot;&quot;</code></p>
+
+<style>
+    img[alt=rotate_switch],
+    img[alt=rotate_stab],
+    img[alt=change_switch],
+    img[alt=change_stab],
+    img[alt=change_kerf] {
+        width: 250px;
+    }
+</style>
 
 <h2 id="switch-type">Switch Type</h2>
 
