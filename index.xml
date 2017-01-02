@@ -50,9 +50,13 @@
       <guid>http://builder-docs.swillkb.com/units-dimensions/</guid>
       <description>
 
-&lt;p&gt;The content is still a work-in-progress, so some of these titles are just idea place holders&amp;hellip;&lt;/p&gt;
+&lt;p&gt;All units used by the builder are in Millimeters (&lt;code&gt;mm&lt;/code&gt;).  That includes dimensions, coordinates and output.  Unfortunately, the current library I am using for exporting DXF files does not support specifying the units in the file format.  Because of this, the dimensions are in &lt;code&gt;mm&lt;/code&gt; in the drawing, but no units are exported with the DXF file.  Make sure your CAD program is set to &lt;code&gt;mm&lt;/code&gt; when you open the DXF because it will assume your default units.  If you need a file with units defined for your laser cutter, you will want to open the file in LibreCAD (or some other CAD software), make sure the drawing units are set to &lt;code&gt;mm&lt;/code&gt;, and then save as a &lt;code&gt;DXF 2007&lt;/code&gt; file format.  The &lt;code&gt;DXF 2007&lt;/code&gt; format will save the units as well as the dimension in the resulting DXF file.&lt;/p&gt;
 
 &lt;h2 id=&#34;key-sizing-spacing&#34;&gt;Key Sizing &amp;amp; Spacing&lt;/h2&gt;
+
+&lt;p&gt;Each key drawn by the builder is based on a multiple of a &lt;code&gt;key unit&lt;/code&gt;, which has a shorthand of &lt;code&gt;u&lt;/code&gt;.  A &lt;code&gt;key unit&lt;/code&gt; is defined to be the amount of space a single 1x1 unit key takes up on a keyboard.  Two 1u keys will be 1u from center to center, which is a constant of &lt;code&gt;19.05mm&lt;/code&gt;.  Each key on a keyboard can be defined as a multiple of a &lt;code&gt;key unit&lt;/code&gt;, so a standard Space Bar would be 6.25u, and a Right Shift would be 2.75u.&lt;/p&gt;
+
+&lt;p&gt;For the most part, you will not have to worry too much about the key sizing since the &lt;a href=&#34;http://www.keyboard-layout-editor.com/&#34; target=&#34;_blank&#34;&gt;keyboard-layout-editor.com&lt;/a&gt; (KLE) has presets for most of the common layouts.  Keep in mind that KLE may not have the right amount of space between the different key clusters on some layouts, so if you are working from a PCB for a TKL or 104 layout, you will want to verify the spacing KLE specifies.&lt;/p&gt;
 </description>
     </item>
     
@@ -100,7 +104,7 @@ Set in &lt;a href=&#34;#kerf&#34;&gt;Kerf&lt;/a&gt; / Adding &lt;code&gt;_k:1&lt
 &lt;img src=&#34;http://builder-docs.swillkb.com/images/features/change_kerf.png&#34; alt=&#34;change_kerf&#34; title=&#34;Change Kerf&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Here is an example using all of them together: &lt;code&gt;{_r:90, _rs:180, _t:0, _s:2, _k:0.25},&amp;quot;&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Here is an example using all of them together: &lt;code&gt;{_r:90, _rs:180, _t:1, _s:2, _k:0.25},&amp;quot;&amp;quot;&lt;/code&gt;&lt;/p&gt;
 
 &lt;style&gt;
     img[alt=rotate_switch],
