@@ -9,18 +9,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=10" />
-    <title>Units &amp; Dimensions - Docs - Plate &amp; Case Builder</title>
+    <title>Pro Tips - Docs - Plate &amp; Case Builder</title>
     <meta name="generator" content="Hugo 0.16" />
 
     
     <meta name="description" content="Documentation for builder.swillkb.com">
     
-    <link rel="canonical" href="http://builder-docs.swillkb.com/units-dimensions/">
+    <link rel="canonical" href="http://builder-docs.swillkb.com/pro-tips/">
     
     <meta name="author" content="swill">
     
 
-    <meta property="og:url" content="http://builder-docs.swillkb.com/units-dimensions/">
+    <meta property="og:url" content="http://builder-docs.swillkb.com/pro-tips/">
     <meta property="og:title" content="Documentation - builder.swillkb.com">
     <meta property="og:image" content="http://builder-docs.swillkb.com/images/logo.png">
     <meta name="apple-mobile-web-app-title" content="Documentation - builder.swillkb.com">
@@ -197,14 +197,11 @@
 
 
 
-<a class="current" title="Units &amp; Dimensions" href="http://builder-docs.swillkb.com/units-dimensions/">
+<a  title="Units &amp; Dimensions" href="http://builder-docs.swillkb.com/units-dimensions/">
 	
 	Units &amp; Dimensions
 </a>
 
-
-<ul id="scrollspy">
-</ul>
 
   
 </li>
@@ -234,11 +231,14 @@
 
 
 
-<a  title="Pro Tips" href="http://builder-docs.swillkb.com/pro-tips/">
+<a class="current" title="Pro Tips" href="http://builder-docs.swillkb.com/pro-tips/">
 	
 	Pro Tips
 </a>
 
+
+<ul id="scrollspy">
+</ul>
 
   
 </li>
@@ -295,19 +295,78 @@
 
 	<article class="article">
 		<div class="wrapper">
-			<h1>Units &amp; Dimensions </h1>
+			<h1>Pro Tips </h1>
 
 			
 
-<h2 id="builder-units">Builder Units</h2>
+<p>The builder is a tool with a <em>LOT</em> of different options and possibilities.  As a result, there are quite a few different tips and tricks that can/should be documented.  If you know of additional tips which are not documented here, please <a href="http://builder-docs.swillkb.com/contribute/">contribute</a> to the documentation.</p>
 
-<p>All units used by the builder are in Millimeters (<code>mm</code>).  That includes dimensions, coordinates and output.  Unfortunately, the current library I am using for exporting DXF files does not support specifying the units in the file format.  Because of this, the dimensions are in <code>mm</code> in the drawing, but no units are exported with the DXF file.  Make sure your CAD program is set to <code>mm</code> when you open the DXF because it will assume your default units.  If you need a file with units defined for your laser cutter, you will want to open the file in LibreCAD (or some other CAD software), make sure the drawing units are set to <code>mm</code>, and then save as a <code>DXF 2007</code> file format.  The <code>DXF 2007</code> format will save the units as well as the dimension in the resulting DXF file.</p>
+<h2 id="svg-to-stl-conversion">SVG to STL Conversion</h2>
 
-<h2 id="key-sizing-spacing">Key Sizing &amp; Spacing</h2>
+<p>If you want to 3D print a prototype of your design, you will need to convert the 2-dimensional SVG to a 3-dimensional STL file format in order for your 3D printer to be able to work with it.  I have created a video tutorial for how to do this conversion for your convenience.</p>
 
-<p>Each key drawn by the builder is based on a multiple of a <code>key unit</code>, which has a shorthand of <code>u</code>.  A <code>key unit</code> is defined to be the amount of space a single 1x1 unit key takes up on a keyboard.  Two 1u keys will be 1u from center to center, which is a constant of <code>19.05mm</code>.  Each key on a keyboard can be defined as a multiple of a <code>key unit</code>, so a standard Space Bar would be 6.25u, and a Right Shift would be 2.75u.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In the video I say to extrude the faces before you do the cut.  If you do this, it will take longer to do the cut.  After doing some testing I recommend that you do the cut of the unioned faces before doing the extrude in order to speed up the process.</p>
+</div>
 
-<p>For the most part, you will not have to worry too much about the key sizing since the <a href="http://www.keyboard-layout-editor.com/" target="_blank">keyboard-layout-editor.com</a> (KLE) has presets for most of the common layouts.  Keep in mind that KLE may not have the right amount of space between the different key clusters on some layouts, so if you are working from a PCB for a TKL or 104 layout, you will want to verify the spacing KLE specifies.</p>
+<p><div class="video-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/8CROo67W24M" frameborder="0" allowfullscreen></iframe></div>
+<style type="text/css">
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+</style></p>
+
+<h2 id="support-multiple-layouts">Support Multiple Layouts</h2>
+
+<p>One of the most common questions I get is &ldquo;How do I support multiple layouts?&rdquo;.  One of the most common examples is something like supporting both a stepped caps lock as well as a regular full touch caps lock in the same layout.  Another example is supporting both a regular right shift (2.75u) as well as a short right shift (1.75u + 1u) on the same layout.</p>
+
+<pre><code class="language-json">[&quot;~\n`&quot;,&quot;!\n1&quot;,&quot;@\n2&quot;,&quot;#\n3&quot;,&quot;$\n4&quot;,&quot;%\n5&quot;,&quot;^\n6&quot;,&quot;&amp;\n7&quot;,&quot;*\n8&quot;,&quot;(\n9&quot;,&quot;)\n0&quot;,&quot;_\n-&quot;,&quot;+\n=&quot;,{w:2},&quot;Backspace&quot;],
+[{w:1.5},&quot;Tab&quot;,&quot;Q&quot;,&quot;W&quot;,&quot;E&quot;,&quot;R&quot;,&quot;T&quot;,&quot;Y&quot;,&quot;U&quot;,&quot;I&quot;,&quot;O&quot;,&quot;P&quot;,&quot;{\n[&quot;,&quot;}\n]&quot;,{w:1.5},&quot;|\n\\&quot;],
+[{w:1.25},&quot;Stepped&quot;,{w:1.75,x:-1.25},&quot;Caps Lock&quot;,&quot;A&quot;,&quot;S&quot;,&quot;D&quot;,&quot;F&quot;,&quot;G&quot;,&quot;H&quot;,&quot;J&quot;,&quot;K&quot;,&quot;L&quot;,&quot;:\n;&quot;,&quot;\&quot;\n'&quot;,{w:2.25},&quot;Enter&quot;],
+[{w:2.25},&quot;Shift&quot;,&quot;Z&quot;,&quot;X&quot;,&quot;C&quot;,&quot;V&quot;,&quot;B&quot;,&quot;N&quot;,&quot;M&quot;,&quot;&lt;\n,&quot;,&quot;&gt;\n.&quot;,&quot;?\n/&quot;,{w:1.75},&quot;ShortShift&quot;,&quot;Fn&quot;,{w:2.75,x:-2.75},&quot;Shift&quot;],
+[{w:1.25},&quot;Ctrl&quot;,{w:1.25},&quot;Win&quot;,{w:1.25},&quot;Alt&quot;,{a:7,w:6.25},&quot;&quot;,{a:4,w:1.25},&quot;Alt&quot;,{w:1.25},&quot;Win&quot;,{w:1.25},&quot;Menu&quot;,{w:1.25},&quot;Ctrl&quot;]
+</code></pre>
+
+<p>Note the following key definitions:</p>
+
+<pre><code>{w:1.25},&quot;Stepped&quot;,{w:1.75,x:-1.25},&quot;Caps Lock&quot;
+{w:1.75},&quot;ShortShift&quot;,&quot;Fn&quot;,{w:2.75,x:-2.75},&quot;Shift&quot;
+</code></pre>
+
+<p>What we are doing here is actually placing two keys in the same space.  So we are defining one key, and then we are defining the next key and are using a negative <code>x</code> value to move it over top the previous key we defined.  The builder is smart enough to know what to do when you do this and it will union all the overlapping parts together to produce the required cutout to support the configuration.</p>
+
+<p>Here is what this layout looks like when drawn with the default switch and stabilizer options:</p>
+
+<p><img src="http://builder-docs.swillkb.com/images/pro-tips/multi-layout.png" alt="multi-layouts" title="Multiple Layout Support" /></p>
+
+<h2 id="save-a-dxf-with-units">Save a DXF with Units</h2>
+
+<p>One of the most common issues people have when working with the files output from the tool is &ldquo;Why is my drawing so big?&rdquo;.  Unfortunately, the DXF library I am working with is relatively old and does not support the <code>DXF 2007</code> file format which includes the Units of Measure.  My tool does everything in Millimeters, but it is not able to specify the units when the file is exported to a DXF.  Since the units are not defined in the file, your CAD program will assume the default units defined in your CAD program.</p>
+
+<p>To solve this problem, you need to open the file in a CAD program that can export the <code>DXF 2007</code> format, specify the units as Millimeters and then save as a <code>DXF 2007</code> file format.  <a href="http://librecad.org/cms/home.html" target="_blank">LibreCAD</a> is a free CAD software which I know supports the <code>DXF 2007</code> file format.</p>
+
+<p>Here is the process in LibreCAD to re-save the exported DXF file to the <code>DXF 2007</code> file format.</p>
+
+<ul>
+<li>Download the DXF version of your CAD.</li>
+<li>Open it in LibreCAD</li>
+<li>Navigate to: <strong>Edit</strong> -&gt; <strong>Current Drawing Preferences</strong> (<code>Command + ,</code> on a Mac)</li>
+<li>Select <strong>Units</strong> and change <strong>Main drawing unit</strong> to <strong>Millimeter</strong></li>
+<li>Click <strong>OK</strong></li>
+<li>Navigate to: <strong>File</strong> -&gt; <strong>Save as&hellip;</strong></li>
+<li>Save the file with type <strong>Draw Exchange DXF 2007</strong></li>
+</ul>
 
 
 			<aside class="copyright" role="note">
@@ -324,7 +383,7 @@
 <nav class="pagination" aria-label="Footer">
   <div class="previous">
   
-      <a href="http://builder-docs.swillkb.com/" title="Introduction">
+      <a href="http://builder-docs.swillkb.com/features/" title="Features">
         <span class="direction">
           Previous
         </span>
@@ -334,7 +393,7 @@
           </div>
           <div class="stretch">
             <div class="title">
-              Introduction
+              Features
             </div>
           </div>
         </div>
@@ -344,14 +403,14 @@
 
   <div class="next">
   
-      <a href="http://builder-docs.swillkb.com/features/" title="Features">
+      <a href="http://builder-docs.swillkb.com/contribute/" title="Contribute">
         <span class="direction">
           Next
         </span>
         <div class="page">
           <div class="stretch">
             <div class="title">
-              Features
+              Contribute
             </div>
           </div>
           <div class="button button-next" role="button" aria-label="Next">

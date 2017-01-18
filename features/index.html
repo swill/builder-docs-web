@@ -21,9 +21,9 @@
     
 
     <meta property="og:url" content="http://builder-docs.swillkb.com/features/">
-    <meta property="og:title" content="Plate &amp; Case Builder - Documentation">
+    <meta property="og:title" content="Documentation - builder.swillkb.com">
     <meta property="og:image" content="http://builder-docs.swillkb.com/images/logo.png">
-    <meta name="apple-mobile-web-app-title" content="Plate &amp; Case Builder - Documentation">
+    <meta name="apple-mobile-web-app-title" content="Documentation - builder.swillkb.com">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
@@ -99,7 +99,7 @@
     </div>
     <div class="stretch">
       <div class="title">
-        Plate &amp; Case Builder - Documentation
+        Documentation - builder.swillkb.com
       </div>
     </div>
 
@@ -144,7 +144,7 @@
         </div>
       
       <div class="name">
-        <strong>Plate &amp; Case Builder - Documentation <span class="version">1.0.0</span></strong>
+        <strong>Documentation - builder.swillkb.com <span class="version">1.0.0</span></strong>
         
           <br>
           swill/builder-docs/
@@ -234,6 +234,23 @@
 
 
 
+<a  title="Pro Tips" href="http://builder-docs.swillkb.com/pro-tips/">
+	
+	Pro Tips
+</a>
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
 <a  title="Contribute to the Docs" href="http://builder-docs.swillkb.com/contribute/">
 	
 	Contribute to the Docs
@@ -288,82 +305,214 @@
 
 <p>The keyboard layout is specified by using the <code>Raw data</code> from the <a href="http://www.keyboard-layout-editor.com/" target="_blank">keyboard-layout-editor.com</a> (KLE) tool.  The data from KLE defines the layout of the keyboard, or the footprint of the keys.</p>
 
-<p><img src="http://builder-docs.swillkb.com/images/features/layout.png" alt="layout" title="Keyboard Layout" /></p>
+<p><img src="http://builder-docs.swillkb.com/images/features/layout_layout.png" alt="layout_layout" title="Keyboard Layout" /></p>
 
 <p>Once you have a layout specified, you can modify individual keys by adding or editing the key&rsquo;s details object.  This details object is a set of parameters defined inside curly brackets before the key. For example, <em>Tab</em> is defined as <code>{w:1.5},&quot;Tab&quot;</code>.</p>
 
-<p>The following parameters can be specified to override the default settings on individual keys.</p>
+<p><strong>The following parameters can be specified to override the default settings on individual keys.</strong></p>
 
 <ul>
 <li><p><strong>Rotate Switch Cutout <code>{_r:&lt;degrees&gt;}</code>:</strong>  Example, <code>{_r:90},&quot;&quot;</code>.  Rotate the switch cutout independent of the
 stabilizer cutout (assuming there is one).<br />
-Set in <a href="#switch-type">Switch Type</a> / Adding <code>_r:90</code><br />
-<img src="http://builder-docs.swillkb.com/images/features/rotate_switch.png" alt="rotate_switch" title="Rotate Switch" /></p></li>
+Set in <a href="#switch-type">Switch Type</a> <i>&nbsp;&nbsp;vs&nbsp;&nbsp;</i> Adding <code>_r:90</code><br />
+<img src="http://builder-docs.swillkb.com/images/features/layout_rotate_switch.png" alt="layout_rotate_switch" title="Rotate Switch" /></p></li>
 
 <li><p><strong>Rotate Stabilizer Cutout <code>{_rs:&lt;degrees&gt;}</code>:</strong>  Example, <code>{_rs:180},&quot;&quot;</code>.  Rotate the stabilizer cutout independent of the switch cutout.<br />
-Set in <a href="#stabilizer-type">Stabilizer Type</a> / Adding <code>_rs:180</code><br />
-<img src="http://builder-docs.swillkb.com/images/features/rotate_stab.png" alt="rotate_stab" title="Rotate Stabilizer" /></p></li>
+Set in <a href="#stabilizer-type">Stabilizer Type</a> <i>&nbsp;&nbsp;vs&nbsp;&nbsp;</i> Adding <code>_rs:180</code><br />
+<img src="http://builder-docs.swillkb.com/images/features/layout_rotate_stab.png" alt="layout_rotate_stab" title="Rotate Stabilizer" /></p></li>
 
 <li><p><strong>Switch Cutout Type <code>{_t:&lt;1-4&gt;}</code>:</strong>  Example, <code>{_t:1},&quot;&quot;</code>.  Numbers are in the same order as the images.<br />
-Set in <a href="#switch-type">Switch Type</a> / Adding <code>_t:1</code><br />
-<img src="http://builder-docs.swillkb.com/images/features/change_switch.png" alt="change_switch" title="Change Switch Type" /></p></li>
+Set in <a href="#switch-type">Switch Type</a> <i>&nbsp;&nbsp;vs&nbsp;&nbsp;</i> Adding <code>_t:1</code><br />
+<img src="http://builder-docs.swillkb.com/images/features/layout_change_switch.png" alt="layout_change_switch" title="Change Switch Type" /></p></li>
 
-<li><p><strong>Stabilizer Cutout Type <code>{_s:&lt;0-4&gt;}</code>:</strong>  Example, <code>{_s:3},&quot;&quot;</code>.  Numbers are in the same order as the dropdown list.<br />
-Set in <a href="#stabilizer-type">Stabilizer Type</a> / Adding <code>_s:3</code><br />
-<img src="http://builder-docs.swillkb.com/images/features/change_stab.png" alt="change_stab" title="Change Stabilizer Type" /></p></li>
+<li><p><strong>Stabilizer Cutout Type <code>{_s:&lt;0-4&gt;}</code>:</strong>  Example, <code>{_s:3},&quot;&quot;</code>.  Numbers are in the same order as the dropdown list.  The special <code>{_s:0},&quot;&quot;</code> options is used to remove the stabilizer completely for an otherwise stabilized key.<br />
+Set in <a href="#stabilizer-type">Stabilizer Type</a> <i>&nbsp;&nbsp;vs&nbsp;&nbsp;</i> Adding <code>_s:3</code><br />
+<img src="http://builder-docs.swillkb.com/images/features/layout_change_stab.png" alt="layout_change_stab" title="Change Stabilizer Type" /></p></li>
 
 <li><p><strong>Cutting Kerf <code>{_k:&lt;mm&gt;}</code>:</strong>  Example, <code>{_k:0.25},&quot;&quot;</code>.  The kerf value for an individual switch/stabilizer cutout,
 this overrides the value set in the <a href="#kerf">Kerf</a> section.  Values are in mm (without the unit).<br />
-Set in <a href="#kerf">Kerf</a> / Adding <code>_k:1</code><br />
-<img src="http://builder-docs.swillkb.com/images/features/change_kerf.png" alt="change_kerf" title="Change Kerf" /></p></li>
+Set in <a href="#kerf">Kerf</a> <i>&nbsp;&nbsp;vs&nbsp;&nbsp;</i> Adding <code>_k:1</code><br />
+<img src="http://builder-docs.swillkb.com/images/features/layout_change_kerf.png" alt="layout_change_kerf" title="Change Kerf" /></p></li>
 </ul>
 
 <p>Here is an example using all of them together: <code>{_r:90, _rs:180, _t:1, _s:2, _k:0.25},&quot;&quot;</code></p>
 
-<style>
-    img[alt=rotate_switch],
-    img[alt=rotate_stab],
-    img[alt=change_switch],
-    img[alt=change_stab],
-    img[alt=change_kerf] {
-        width: 250px;
+<style type="text/css">
+    img[alt=layout_rotate_switch],
+    img[alt=layout_rotate_stab],
+    img[alt=layout_change_switch],
+    img[alt=layout_change_stab],
+    img[alt=layout_change_kerf] {
+        width: 285px;
     }
 </style>
 
 <h2 id="switch-type">Switch Type</h2>
 
+<p>There are currently 4 different switch cutouts which you can choose from.  Each have their own pros and cons which we will cover in this section.</p>
+
+<ul>
+<li><p><strong>Classic MX Cutout <code>{_t:1}</code></strong><div><div style="float:left;"><img src="http://builder-docs.swillkb.com/images/features/switch_type_classic.png" alt="switch_type_classic" title="Classic MX" /></div><div>The standard cutout used by all non-custom keyboards.  This cutout does not allow you to open the switches without desoldering them from the PCB.  If you are hand wiring a keyboard, this cutout is the most stable and you will be able to unclip the switch from the plate without desoldering.</div></div><div style="clear:both;height:1px;">&nbsp;</div></p></li>
+
+<li><p><strong>MX + Alps Cutout <code>{_t:2}</code></strong><div><div style="float:left;"><img src="http://builder-docs.swillkb.com/images/features/switch_type_mx_alps.png" alt="switch_type_mx_alps" title="MX + Alps" /></div><div>A cutout with a good balance of flexibility and fabrication cost. It is less expensive to produce than any of the other openable cutouts.  It supports MX switches with the ability to open them without desoldering as well as Alps switches.  It is known to be the least stable of all the cutouts, so it does have trade-offs.</div></div><div style="clear:both;height:1px;">&nbsp;</div></p></li>
+
+<li><p><strong>MX Openable Cutout <code>{_t:3}</code></strong><div><div style="float:left;"><img src="http://builder-docs.swillkb.com/images/features/switch_type_mx.png" alt="switch_type_mx" title="MX Openable" /></div><div>The most popular MX specific cutout which allows for switch opening without desoldering from the PCB. It is the most stable openable MX cutout, but you will pay a little more to get a plate cut with this cutout than the previous cutout.</div></div><div style="clear:both;height:1px;">&nbsp;</div></p></li>
+
+<li><p><strong>Alps Cutout <code>{_t:4}</code></strong><div><div style="float:left;"><img src="http://builder-docs.swillkb.com/images/features/switch_type_alps.png" alt="switch_type_alps" title="Alps" /></div><div>A standard Alps cutout with no frills.  It is compatible with the old school Alps as well as the Matias Alps switches.</div></div><div style="clear:both;height:1px;">&nbsp;</div></p></li>
+</ul>
+
+<style type="text/css">
+  img[alt=switch_type_classic],
+  img[alt=switch_type_mx_alps],
+  img[alt=switch_type_mx],
+  img[alt=switch_type_alps] {
+    width: 85px;
+    padding-right:10px;
+  }
+</style>
+
 <h2 id="stabilizer-type">Stabilizer Type</h2>
 
+<p>There are currently 4 different stabilizer cutouts which you can choose from.</p>
+
+<ul>
+<li><p><strong>Cherry + Costar Stabilizer <code>{_s:1}</code></strong><div><div style="float:left;"><img src="http://builder-docs.swillkb.com/images/features/stab_type_cherry_costar.png" alt="stab_type_cherry_costar" title="Classic MX" /></div><div>A stabilizer cutout which supports; Cherry PCB Mount, Cherry Plate Mount and Costar stabilizers.  While this cutout supports Cherry Plate Mount stabilizers, if you know you are going to use that stabilizer, the Cherry Stabilizer cutout is a better option.  This is due to the fact the extra top cutout is where the stabilizer clips onto the plate, so it won&rsquo;t clip in there.</div></div><div style="clear:both;height:1px;">&nbsp;</div></p></li>
+
+<li><p><strong>Cherry Stabilizer <code>{_s:2}</code></strong><div><div style="float:left;"><img src="http://builder-docs.swillkb.com/images/features/stab_type_cherry.png" alt="stab_type_cherry" title="MX + Alps" /></div><div>A stabilizer cutout which supports both Cherry PCB Mount and Cherry Plate Mount stabilizers.  If you plan to use Cherry Plate Mount stabilizers, this is your best option because the stabilizer will clip in on the top.</div></div><div style="clear:both;height:1px;">&nbsp;</div></p></li>
+
+<li><p><strong>Costar Stabilizer <code>{_s:3}</code></strong><div><div style="float:left;"><img src="http://builder-docs.swillkb.com/images/features/stab_type_costar.png" alt="stab_type_costar" title="MX Openable" /></div><div>A stabilizer cutout which only supports Costar stabilizers.  This is the cheapest MX compatible stabilizer cutout, so it will have a lower fabrication cost.</div></div><div style="clear:both;height:1px;">&nbsp;</div></p></li>
+
+<li><p><strong>Alps Stabilizer <code>{_s:4}</code></strong><div><div style="float:left;"><img src="http://builder-docs.swillkb.com/images/features/stab_type_alps.png" alt="stab_type_alps" title="Alps" /></div><div>A stabilizer cutout which supports Alps stabilizers for known sizes.  If the size is not a known Alps stabilizer size, a Costar will be drawn instead.  EG: A 2.25 unit key.</div></div><div style="clear:both;height:1px;">&nbsp;</div></p></li>
+</ul>
+
+<style type="text/css">
+  img[alt=stab_type_cherry_costar],
+  img[alt=stab_type_cherry],
+  img[alt=stab_type_costar],
+  img[alt=stab_type_alps] {
+    width: 150px;
+    padding-right:5px;
+  }
+</style>
+
 <h2 id="case-type">Case Type</h2>
+
+<p>The Case Type lets you choose how your layout is installed.  You have a few different options, outlined as follows:</p>
+
+<ul>
+<li><p><strong>None</strong> - Don&rsquo;t define a case at all.  This type will produce only the switch layer with your layout on it.  You still have options for modifying this output with things like <a href="#edge-padding">Edge Padding</a> or <a href="#custom-polygons">Custom Polygons</a>, but it will not produce additional layers for building a case.  If you would like additional layers for actually building a full case, choose the <strong>Sandwich</strong> case type.</p></li>
+
+<li><p><strong>Poker (60%)</strong> - Draw a plate to be used with standard Poker compatible 60% cases. This layout is based on the GH60 PCB drawings.  The holes default to 5mm in diameter, so the screw is intended to pass through the plate with the plate/PCB being held to the case by fixing the PCB to the case.  If you would like to use a Poker style case and hand wire the board instead of using a PCB, you can use standoffs and set the <a href="#hole-diameter">Hole Diameter</a> smaller to make the screws support the plate.</p></li>
+
+<li><p><strong>Sandwich</strong> - Draw a plate as well as additional layers to build a layered case.  The <code>switch</code> layer goes on the top, then there are essentially ring layers to create empty space for the PCB or wiring and a <code>bottom</code> plate.  There are two types of ring layers; <code>open</code> which has a cutout for the USB connector, and <code>closed</code> which has no cutouts.  You can choose how many of each layer is suitable for your case.  This case type produces the CAD files for all the layers required to build a layered sandwich case.</p></li>
+</ul>
 
 <h2 id="hole-diameter">Hole Diameter</h2>
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Only applies to the <code>Poker</code> case type.</p>
+<p>This option only applies to the <strong><code>Poker</code></strong> case type.</p>
 </div>
+
+<p>The default hole (and slot) diameter is 5mm for the Poker case type.  This option lets you specify what diameter you want these holes and slots to be.  This is useful if you do not have a PCB to hold the plate to the case.  This would allow you to use a value like 2.5mm and use M2 screws with a standoff (a nut or nylon washers) to fix the plate to the Poker case itself.  Usually the screws pass through the Poker plate and the PCB is used to hold the plate to the case.  This allows you to change this default behavior and make fix the plate directly to the Poker case.</p>
 
 <h2 id="usb-cutout">USB Cutout</h2>
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Only applies to the <code>Sandwich</code> case type.</p>
+<p>This option only applies to the <strong><code>Sandwich</code></strong> case type.</p>
 </div>
+
+<p>These option lets you move the USB cutout <code>location</code> in the <em>open</em> layer of the <a href="#case-type">Sandwich case type</a>.  The default of <code>0</code>mm places the USB cutout at the center of the total width of the layout on the top side of the <em>open</em> layer of the case. The <code>width</code> of the cutout defaults to <code>10</code>mm, and can be set to your desired width.  It is very difficult to represent the location of the cutout in relation to a potential PCB in a usable fashion, so instead I work entirely off the width and center points of the total case drawn.  If you enter values that would put the USB cutout outside of the inner opening of the case, the cutout will be placed with one edge against the side of the inner opening.  This will put the edge of the cutout the <a href="#mount-holes">edge width</a> distance from the outside edge of the case.</p>
+
+<p><code>location</code> controls: <code>0</code> = center, <code>neg (-)</code> = move left, <code>pos (+)</code> = move right<br />
+Example: <em>GH60</em> = <code>-124.3</code></p>
 
 <h2 id="mount-holes">Mount Holes</h2>
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Only applies to the <code>Sandwich</code> case type.</p>
+<p>This option only applies to the <strong><code>Sandwich</code></strong> case type.</p>
 </div>
+
+<p>The <a href="#case-type">Sandwich case type</a> has the option to add mount holes which will be used to screw together the case.  This feature is optional because some people may choose to glue, or otherwise fix the layers together, so mount holes would not be desired.</p>
+
+<p>If specified, the <code>number of holes</code> must be greater than or equal to <code>4</code> and must be an <em>even</em> number.  The first <code>4</code> holes will always be placed at the corners of the case, and the remaining holes will then be evenly distributed based on the largest remaining space.  The holes will be evenly distributed around the board according to a combination of the <code>diameter</code> of the hole and the <a href="#edge-padding">Edge Padding</a>.  If the Edge Padding is greater than the hole <code>diameter</code>, then the holes will be evenly distributed around all 4 sides of the case.  If the Edge Padding is less than or equal to the hole <code>diameter</code> on two opposing sides, then the holes will be evenly distributed on the other two opposing sides of the case.</p>
+
+<p>The <code>edge width</code> defines the width of the wall on all four sides of the sandwich case, assuming the <a href="#edge-padding">Edge Padding</a> is greater than or equal to the <code>edge width</code>.  The holes will be placed along the center of the <code>edge width</code>.  Be sure to leave enough material on both sides of the holes to maintain structural integrity when the case is assembled.  The difference between the Edge Padding and the <code>edge width</code> will represent empty space inside the case.  This is useful if you plan to put additional components inside the keyboard case, like a Raspberry Pi for example.</p>
+
+<p>You will want to choose the <code>diameter</code> of the hole based on the screws you plan to use for assembly.  For example, if you plan to use an M3 screw with a nut on the opposite side, then you would likely want a value of about <code>3.2</code>mm.  If you plan to use an M3 screw and tap the hole so no nut is required, then you would likely want a value of about <code>2.5</code>mm.</p>
 
 <h2 id="edge-padding">Edge Padding</h2>
 
+<p>The edge padding defines the amount of space between the edge of the case and the edge of the keyboard layout, which essentially lines up with the edge of the key cap.  This feature is optional for all case types except the <a href="#case-type">Sandwich case</a>.</p>
+
+<p>The edge padding can be either positive or negative.  A positive value will add to the total case size in that direction.  A negative value will cut away from the plate layer that much material.  Be careful to leave enough material next to the switches if you use negative values.  A value of <code>0</code> will remove that wall of the sandwich case, assuming <a href="#kerf">Kerf</a> is not set to a positive value.  If Kerf is set to a positive value, then you will need to define the padding as negative kerf (eg: <code>-0.15</code>) in order to remove that wall of the case completely.  Please note that ordering from <a href="http://builder.swillkb.com" target="_blank">builder.swillkb.com</a> will result in your layout being redrawn with the optimal kerf for the selected vendor.  If you are trying to remove case walls, you may have to edit your Edge Padding to account for the applied kerf.</p>
+
+<p>The edge padding is required on at least two opposing sides of the Sandwich case.  If you leave two opposing sides open on a Sandwich case, you reduce the material waste to fabricate the middle layers, so the fabrication costs are considerably less.</p>
+
 <h2 id="plate-corners">Plate Corners</h2>
+
+<p>The plate corners feature lets you add rounded corners to your plate/case, which adds a really nice aesthetic to a case.</p>
+
+<p>The value entered defines the radius of each corner in millimeters.</p>
+
+<h2 id="custom-polygons">Custom Polygons</h2>
+
+<p>The custom polygons feature lets you totally customize the output of your plate/case.  If you want additional cutouts, such as holes or adapting a cutout, it can be done with a <em>Cut</em> operation.  If you want to add additional material to the case, to make it more interesting or to serve a specific purpose, use the <em>Add</em> operation.  The polygon operations can be done on any combination of drawn layers.</p>
+
+<p>There are two different polygon operations which you can use.</p>
+
+<ul>
+<li><strong>Add</strong> - This will add material according to the defined path for all selected layers.</li>
+<li><strong>Cut</strong> - This will remove material according to the defined path for all selected layers.</li>
+</ul>
+
+<p>Currently there are four types of polygons which can be added or removed from the drawings.</p>
+
+<ul>
+<li><p><strong>Circle</strong> - Defines a circle with a <code>diameter</code> which is placed at each of the <code>circle centers</code> locations.</p></li>
+
+<li><p><strong>Rectangle</strong> - Defines a rectangle with a <code>width</code> and <code>height</code> which is placed at each of the <code>rectangle centers</code> locations.</p></li>
+
+<li><p><strong>Rounded Rectangle</strong> - Defines a rectangle with rounded corners according the <code>radius</code> which will have a <code>width</code> and <code>height</code> and will be placed at each of the <code>rounded rectangle centers</code> locations.</p></li>
+
+<li><p><strong>Custom Polygon</strong> - You define a custom polygon by defining a <code>closed path of points</code> in <strong>clockwise</strong> order, and this polygon will be places at each of the defined <code>relative to</code> points.</p></li>
+</ul>
+
+<p>If it is not clear from above, a single polygon definition can be placed in multiple locations by defining more than one <code>center</code> or <code>relative to</code> point.</p>
+
+<p><strong>Coordinates and Positioning</strong><br />
+Points are defined inside square brackets (<code>[ ]</code>) and separated by a semicolon (<code>;</code>).</p>
+
+<p>The point <code>[0,0]</code> is defined to be the center of the case.  The values <code>x</code> and <code>y</code> can be used in the coordinate system to represent <em><sup>1</sup>&frasl;<sub>2</sub> the total width</em> and <em><sup>1</sup>&frasl;<sub>2</sub> the total height</em> respectively.  This means the following locations are represented as follows; top left = [-x,-y], top right = <code>[x,-y]</code>, bottom left = <code>[-x,y]</code>, bottom right = <code>[x,y]</code>.</p>
+
+<p>In addition to being able to use <code>x</code> and <code>y</code> to help represent a point in space, you can also represent a coordinate as a set of arithmetic equations.  For example, if you wanted to represent a point on the top side of the case which splits the difference between the center of the board and 20mm from the top left corner, you would represent that point as: <code>[(-x+20)/2, -y]</code>.  This provides a lot of flexibility in representing points related to the plate/case and enables you to have handle symmetry in an intuitive manor.</p>
+
+<p><strong>Example</strong><br />
+This feature is best described with an example, so here is a 60% layout with added tabs and holes in the tabs.</p>
+
+<p><em>Custom Polygon</em><br />
+Op: <code>Add</code><br />
+Rel-To: <code>[-x,-y]; [x-30,-y]; [x-30,y]; [-x,y]</code><br />
+Path: <code>[0,0]; [5,-5]; [25,-5]; [30,0]; [25,5]; [5,5]</code></p>
+
+<p><em>Circle</em><br />
+Op: <code>Cut</code><br />
+Diameter: <code>3</code><br />
+Centers: <code>[-x+15,-y-1.5]; [x-15,-y-1.5]; [-x+15,y+1.5]; [x-15,y+1.5]</code></p>
+
+<p><img src="http://builder-docs.swillkb.com/images/features/custom_polygon_eg.png" alt="custom_polygon_eg" title="Custom Polygons Example" /></p>
 
 <h2 id="kerf">Kerf</h2>
 
+<p>The kerf feature allows you to account for the kerf of the cutting tool when the part is being fabricated.  Kerf is the width of the material removed by a cutting tool.  If you do not account for kerf, the part will be smaller than expected by <sup>1</sup>&frasl;<sub>2</sub> the tool&rsquo;s kerf value on all cut sides. The kerf is calculated along the cut line, so <sup>1</sup>&frasl;<sub>2</sub> will be inside the line and <sup>1</sup>&frasl;<sub>2</sub> will be outside the line.  So for example, if the kerf of a cutting tool is 0.2mm, that means that an extra 0.1mm will be removed from the plate when it is cut (the other 0.1mm is removed from the off cut).  I account for this, so if the kerf is set to 0.2mm, the resulting 14mm square hole would be drawn as a 13.8mm square.  Keep in mind that the different processes will have different values for kerf, so check with the manufacturer.  Also, keep in mind that the type of material and its thickness plays a role in the width of the kerf.</p>
+
+<p>If you order your job through the <a href="http://builder.swillkb.com" target="_blank">builder.swillkb.com</a> tool, then the parts will be redrawn in the tool with the kerf value optimized for the selected fabrication vendor.</p>
+
 <h2 id="line">Line</h2>
+
+<p>The line feature allows you to adjust the color of the cut lines.  Some laser cutters are picky about the color of the cut lines in the SVG, so this lets you conform to their requests.  If you need to change the line color for your fabrication shop, specify the new color here.  Many colors can be referenced just by specifying the name (eg: <code>blue</code>) but you can also use Hex values (eg: <code>#2E69B3</code>).</p>
 
 
 			<aside class="copyright" role="note">
@@ -400,14 +549,14 @@ Set in <a href="#kerf">Kerf</a> / Adding <code>_k:1</code><br />
 
   <div class="next">
   
-      <a href="http://builder-docs.swillkb.com/contribute/" title="Contribute">
+      <a href="http://builder-docs.swillkb.com/pro-tips/" title="Pro Tips">
         <span class="direction">
           Next
         </span>
         <div class="page">
           <div class="stretch">
             <div class="title">
-              Contribute
+              Pro Tips
             </div>
           </div>
           <div class="button button-next" role="button" aria-label="Next">
