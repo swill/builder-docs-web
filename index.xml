@@ -367,6 +367,18 @@ Centers: &lt;code&gt;[-x+15,-y-1.5]; [x-15,-y-1.5]; [-x+15,y+1.5]; [x-15,y+1.5]&
     </item>
     
     <item>
+      <title>Need Help?</title>
+      <link>http://builder-docs.swillkb.com/need-help/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://builder-docs.swillkb.com/need-help/</guid>
+      <description>&lt;p&gt;We try to give a pretty complete overview of the tool and its functionality on this site, but I am sure we have not covered all of your questions.&lt;/p&gt;
+
+&lt;p&gt;If you have questions or you would like to come and join the conversation around this tool, come say &lt;em&gt;Hello&lt;/em&gt; in our &lt;a href=&#34;https://geekhack.org/index.php?topic=65189.0&#34; target=&#34;_blank&#34;&gt;GeekHack thread&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Contribute</title>
       <link>http://builder-docs.swillkb.com/contribute/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
