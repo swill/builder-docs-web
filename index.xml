@@ -281,9 +281,13 @@ Centers: &lt;code&gt;[-x+15,-y-1.5]; [x-15,-y-1.5]; [-x+15,y+1.5]; [x-15,y+1.5]&
 
 &lt;p&gt;If you order your job through the &lt;a href=&#34;http://builder.swillkb.com&#34; target=&#34;_blank&#34;&gt;builder.swillkb.com&lt;/a&gt; tool, then the parts will be redrawn in the tool with the kerf value optimized for the selected fabrication vendor.&lt;/p&gt;
 
-&lt;h2 id=&#34;line&#34;&gt;Line&lt;/h2&gt;
+&lt;h2 id=&#34;line-color&#34;&gt;Line Color&lt;/h2&gt;
 
-&lt;p&gt;The line feature allows you to adjust the color of the cut lines.  Some laser cutters are picky about the color of the cut lines in the SVG, so this lets you conform to their requests.  If you need to change the line color for your fabrication shop, specify the new color here.  Many colors can be referenced just by specifying the name (eg: &lt;code&gt;blue&lt;/code&gt;) but you can also use Hex values (eg: &lt;code&gt;#2E69B3&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;The line color feature allows you to adjust the color of the cut lines.  Some laser cutters are picky about the color of the cut lines in the SVG, so this lets you conform to their requests.  If you need to change the line color for your fabrication shop, specify the new color here.  Many colors can be referenced just by specifying the name (eg: &lt;code&gt;blue&lt;/code&gt;) but you can also use Hex values (eg: &lt;code&gt;#2E69B3&lt;/code&gt;).&lt;/p&gt;
+
+&lt;h2 id=&#34;line-weight&#34;&gt;Line Weight&lt;/h2&gt;
+
+&lt;p&gt;The line weight feature allows you to adjust the stroke weight of the cut lines.  Some laser cutters are picky about the weight of the cut lines in the SVG, so this lets you conform to their requests.  If you need to change the line weight for your fabrication shop, specify the new weight here.  The builder defaults to &lt;code&gt;0.05&lt;/code&gt;mm and overrides are expected to be in &lt;code&gt;mm&lt;/code&gt; (but only as a floating point number without any &lt;code&gt;mm&lt;/code&gt; text).&lt;/p&gt;
 </description>
     </item>
     
