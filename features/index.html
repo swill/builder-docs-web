@@ -346,6 +346,10 @@ Set in <a href="#switch-type">Switch Type</a> <i>&nbsp;&nbsp;vs&nbsp;&nbsp;</i> 
 Set in <a href="#stabilizer-type">Stabilizer Type</a> <i>&nbsp;&nbsp;vs&nbsp;&nbsp;</i> Adding <code>_s:3</code><br />
 <img src="http://builder-docs.swillkb.com/images/features/layout_change_stab.png" alt="layout_change_stab" title="Change Stabilizer Type" /></p></li>
 
+<li><p><strong>Custom Polygons <code>{_c:&quot;&lt;index&gt;[,index]&quot;}</code>:</strong>  Example, <code>{_c:&quot;0,1&quot;}</code>.  The index values are found in the <a href="#custom-polygons">Custom Polygons</a> section associated with each line item.  The specified custom polygon(s) will be drawn relative to the center point of the specific switch.<br />
+Set in <a href="#stabilizer-type">Stabilizer Type</a> <i>&nbsp;&nbsp;vs&nbsp;&nbsp;</i> Adding <code>_c:&quot;0,1&quot;</code> with the appropriate Custom Polygons<br />
+<img src="http://builder-docs.swillkb.com/images/features/layout_custom_polygons.png" alt="layout_custom_polygons" title="Add Custom Polygons" /></p></li>
+
 <li><p><strong>Cutting Kerf <code>{_k:&lt;mm&gt;}</code>:</strong>  Example, <code>{_k:0.25},&quot;&quot;</code>.  The kerf value for an individual switch/stabilizer cutout,
 this overrides the value set in the <a href="#kerf">Kerf</a> section.  Values are in mm (without the unit).<br />
 Set in <a href="#kerf">Kerf</a> <i>&nbsp;&nbsp;vs&nbsp;&nbsp;</i> Adding <code>_k:1</code><br />
@@ -359,6 +363,7 @@ Set in <a href="#kerf">Kerf</a> <i>&nbsp;&nbsp;vs&nbsp;&nbsp;</i> Adding <code>_
     img[alt=layout_rotate_stab],
     img[alt=layout_change_switch],
     img[alt=layout_change_stab],
+  img[alt=layout_custom_polygons],
     img[alt=layout_change_kerf] {
         width: 285px;
     }
@@ -502,9 +507,13 @@ Example: <em>GH60</em> = <code>-124.3</code></p>
 <p><strong>Coordinates and Positioning</strong><br />
 Points are defined inside square brackets (<code>[ ]</code>) and separated by a semicolon (<code>;</code>).</p>
 
-<p>The point <code>[0,0]</code> is defined to be the center of the case.  The values <code>x</code> and <code>y</code> can be used in the coordinate system to represent <em><sup>1</sup>&frasl;<sub>2</sub> the total width</em> and <em><sup>1</sup>&frasl;<sub>2</sub> the total height</em> respectively.  This means the following locations are represented as follows; top left = [-x,-y], top right = <code>[x,-y]</code>, bottom left = <code>[-x,y]</code>, bottom right = <code>[x,y]</code>.</p>
+<p>The point <code>[0,0]</code> is defined to be the center of the case.  The values <code>x</code> and <code>y</code> can be used in the coordinate system to represent <em><sup>1</sup>&frasl;<sub>2</sub> the total width</em> and <em><sup>1</sup>&frasl;<sub>2</sub> the total height</em> respectively.  This means the following locations are represented as follows; top left = <code>[-x,-y]</code>, top right = <code>[x,-y]</code>, bottom left = <code>[-x,y]</code>, bottom right = <code>[x,y]</code>.</p>
 
 <p>In addition to being able to use <code>x</code> and <code>y</code> to help represent a point in space, you can also represent a coordinate as a set of arithmetic equations.  For example, if you wanted to represent a point on the top side of the case which splits the difference between the center of the board and 20mm from the top left corner, you would represent that point as: <code>[(-x+20)/2, -y]</code>.  This provides a lot of flexibility in representing points related to the plate/case and enables you to have handle symmetry in an intuitive manor.</p>
+
+<p>In addition to being able to place custom polygons based on positioning relative the size of the case, custom polygons can be placed based on the center point of a switch for a specific key in the layout.  This is done by adding the <code>{_c:&quot;0,1&quot;}</code> details object, where <code>0</code> and <code>1</code> are the index values for the custom polygons to be drawn relative to that switch center.  This is very useful if you want to modify things like the stabilizer cutout for a 3mm switch plate so a cherry stabilizer wire has somewhere to go.</p>
+
+<p>Check the <a href="#plate-layout">Plate Layout</a> section for additional details regarding the individual key based placement.</p>
 
 <p><strong>Example</strong><br />
 This feature is best described with an example, so here is a 60% layout with added tabs and holes in the tabs.</p>
