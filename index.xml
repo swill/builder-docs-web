@@ -290,6 +290,12 @@ Centers: &lt;code&gt;[-x+15,-y-1.5]; [x-15,-y-1.5]; [-x+15,y+1.5]; [x-15,y+1.5]&
 
 &lt;p&gt;If you order your job through the &lt;a href=&#34;http://builder.swillkb.com&#34; target=&#34;_blank&#34;&gt;builder.swillkb.com&lt;/a&gt; tool, then the parts will be redrawn in the tool with the kerf value optimized for the selected fabrication vendor.&lt;/p&gt;
 
+&lt;h2 id=&#34;key-unit&#34;&gt;Key Unit&lt;/h2&gt;
+
+&lt;p&gt;The key unit feature allows the default key unit size of &lt;code&gt;19.05mm&lt;/code&gt; to be modified.  This feature is useful if a PCB designer has used a value such as &lt;code&gt;19.00mm&lt;/code&gt; instead of the standard &lt;code&gt;19.05mm&lt;/code&gt; for the sizing of a single key unit.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; This feature does not modify the spacing of the space bar stabilizer position.&lt;/p&gt;
+
 &lt;h2 id=&#34;line-color&#34;&gt;Line Color&lt;/h2&gt;
 
 &lt;p&gt;The line color feature allows you to adjust the color of the cut lines.  Some laser cutters are picky about the color of the cut lines in the SVG, so this lets you conform to their requests.  If you need to change the line color for your fabrication shop, specify the new color here.  Many colors can be referenced just by specifying the name (eg: &lt;code&gt;blue&lt;/code&gt;) but you can also use Hex values (eg: &lt;code&gt;#2E69B3&lt;/code&gt;).&lt;/p&gt;
