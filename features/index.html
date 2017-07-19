@@ -493,16 +493,21 @@ Example: <em>GH60</em> = <code>-124.3</code></p>
 <p>Currently there are four types of polygons which can be added or removed from the drawings.</p>
 
 <ul>
-<li><p><strong>Circle</strong> - Defines a circle with a <code>diameter</code> which is placed at each of the <code>circle centers</code> locations.</p></li>
+<li><p><strong>Circle</strong> - Defines a circle with a <code>diameter</code> which is placed at each of the <code>circle centers</code> locations, according to the <code>relative to</code> points.  If more than one <code>relative to</code> point is specified the set of shapes is duplicated at each <code>relative to</code> location.</p></li>
 
-<li><p><strong>Rectangle</strong> - Defines a rectangle with a <code>width</code> and <code>height</code> which is placed at each of the <code>rectangle centers</code> locations.</p></li>
+<li><p><strong>Rectangle</strong> - Defines a rectangle with a <code>width</code> and <code>height</code> which is placed at each of the <code>rectangle centers</code> locations, according to the <code>relative to</code> points.  If more than one <code>relative to</code> point is specified the set of shapes is duplicated at each <code>relative to</code> location.</p></li>
 
-<li><p><strong>Rounded Rectangle</strong> - Defines a rectangle with rounded corners according the <code>radius</code> which will have a <code>width</code> and <code>height</code> and will be placed at each of the <code>rounded rectangle centers</code> locations.</p></li>
+<li><p><strong>Rounded Rectangle</strong> - Defines a rectangle with rounded corners according the <code>radius</code> which will have a <code>width</code> and <code>height</code> and will be placed at each of the <code>rounded rectangle centers</code> locations, according to the <code>relative to</code> points.  If more than one <code>relative to</code> point is specified the set of shapes is duplicated at each <code>relative to</code> location.</p></li>
 
 <li><p><strong>Custom Polygon</strong> - You define a custom polygon by defining a <code>closed path of points</code> in <strong>clockwise</strong> order, and this polygon will be places at each of the defined <code>relative to</code> points.</p></li>
 </ul>
 
-<p>If it is not clear from above, a single polygon definition can be placed in multiple locations by defining more than one <code>center</code> or <code>relative to</code> point.</p>
+<p>If it is not clear from above, a single polygon definition can be placed in multiple locations by defining more than one <code>center</code> and/or <code>relative to</code> point.</p>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you define a shape and do not specify any <code>relative to</code> points, the shape will not be drawn.  However, if you use the <code>{_c:&quot;&lt;index&gt;[,index]&quot;},&quot;key&quot;</code> formatting defined in the <a href="#plate-layout">Plate Layout</a> section, the center of the associated key will be used as the <code>relative to</code> point.  This is very useful for placing custom cutouts relative to specific keys in the plate layout.</p>
+</div>
 
 <p><strong>Coordinates and Positioning</strong><br />
 Points are defined inside square brackets (<code>[ ]</code>) and separated by a semicolon (<code>;</code>).</p>
@@ -515,7 +520,7 @@ Points are defined inside square brackets (<code>[ ]</code>) and separated by a 
 
 <p>Check the <a href="#plate-layout">Plate Layout</a> section for additional details regarding the individual key based placement.</p>
 
-<p><strong>Example</strong><br />
+<p><strong>Example 1</strong><br />
 This feature is best described with an example, so here is a 60% layout with added tabs and holes in the tabs.</p>
 
 <p><em>Custom Polygon</em><br />
@@ -526,9 +531,28 @@ Path: <code>[0,0]; [5,-5]; [25,-5]; [30,0]; [25,5]; [5,5]</code></p>
 <p><em>Circle</em><br />
 Op: <code>Cut</code><br />
 Diameter: <code>3</code><br />
+Rel-To: <code>[0,0]</code><br />
 Centers: <code>[-x+15,-y-1.5]; [x-15,-y-1.5]; [-x+15,y+1.5]; [x-15,y+1.5]</code></p>
 
-<p><img src="http://builder-docs.swillkb.com/images/features/custom_polygon_eg.png" alt="custom_polygon_eg" title="Custom Polygons Example" /></p>
+<p><img src="http://builder-docs.swillkb.com/images/features/custom_polygon_eg1.png" alt="custom_polygon_eg1" title="Custom Polygons Example 1" /></p>
+
+<p><strong>Example 2</strong><br />
+In this contrived example, the use of cutouts associated with specific keys is illustrated.</p>
+
+<p><em>Plate Layout</em></p>
+
+<pre><code>[{_c:&quot;0&quot;},&quot;&quot;,&quot;&quot;,&quot;&quot;],
+[&quot;&quot;,{_c:&quot;0&quot;},&quot;&quot;,&quot;&quot;],
+[&quot;&quot;,&quot;&quot;,{_c:&quot;0&quot;},&quot;&quot;]
+</code></pre>
+
+<p><em>Circle</em> (index: 0)<br />
+Op: <code>Cut</code><br />
+Diameter: <code>3</code><br />
+Rel-To: <em>not defined</em><br />
+Centers: <code>[7,7];[-7,7];[-7,-7];[7,-7]</code></p>
+
+<p><img src="http://builder-docs.swillkb.com/images/features/custom_polygon_eg2.png" alt="custom_polygon_eg2" title="Custom Polygons Example 2" /></p>
 
 <h2 id="kerf">Kerf</h2>
 
@@ -672,7 +696,7 @@ Centers: <code>[-x+15,-y-1.5]; [x-15,-y-1.5]; [-x+15,y+1.5]; [x-15,y+1.5]</code>
 
     
 
-    <script src="//gohugo.io/js/highlight.pack.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>
