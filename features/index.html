@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=10" />
     <title>Features - Docs - Plate &amp; Case Builder</title>
-    <meta name="generator" content="Hugo 0.16" />
+    <meta name="generator" content="Hugo 0.25.1" />
 
     
     <meta name="description" content="Documentation for builder.swillkb.com">
@@ -180,27 +180,11 @@
 
 
 
-<a  title="Introduction" href="http://builder-docs.swillkb.com/">
-	
-	Introduction
-</a>
-
-
-  
-</li>
-
-
-
-<li>
-  
-    
-
-
-
 <a  title="Units &amp; Dimensions" href="http://builder-docs.swillkb.com/units-dimensions/">
 	
 	Units &amp; Dimensions
 </a>
+
 
 
   
@@ -223,6 +207,7 @@
 <ul id="scrollspy">
 </ul>
 
+
   
 </li>
 
@@ -238,6 +223,7 @@
 	
 	Pro Tips
 </a>
+
 
 
   
@@ -257,6 +243,7 @@
 </a>
 
 
+
   
 </li>
 
@@ -272,6 +259,25 @@
 	
 	Contribute to the Docs
 </a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Introduction" href="http://builder-docs.swillkb.com/">
+	
+	Introduction
+</a>
+
 
 
   
@@ -493,14 +499,27 @@ Example: <em>GH60</em> = <code>-124.3</code></p>
 <p>Currently there are four types of polygons which can be added or removed from the drawings.</p>
 
 <ul>
-<li><p><strong>Circle</strong> - Defines a circle with a <code>diameter</code> which is placed at each of the <code>circle centers</code> locations, according to the <code>relative to</code> points.  If more than one <code>relative to</code> point is specified the set of shapes is duplicated at each <code>relative to</code> location.</p></li>
+<li><p><strong>Circle</strong><div><div style="float:left;"><img src="http://builder-docs.swillkb.com/images/features/custom_polygon_circle.png" alt="custom_polygon_circle" title="Circle" /></div><div>Defines a circle with a <code>diameter</code> which is placed at each of the <code>circle centers</code> locations, according to the <code>relative to</code> points.  If more than one <code>relative to</code> point is specified the set of shapes is duplicated at each <code>relative to</code> location.</div></div><div style="clear:both;height:1px;">&nbsp;</div></p></li>
 
-<li><p><strong>Rectangle</strong> - Defines a rectangle with a <code>width</code> and <code>height</code> which is placed at each of the <code>rectangle centers</code> locations, according to the <code>relative to</code> points.  If more than one <code>relative to</code> point is specified the set of shapes is duplicated at each <code>relative to</code> location.</p></li>
+<li><p><strong>Superellipse</strong><div><div style="float:left;"><img src="http://builder-docs.swillkb.com/images/features/custom_polygon_superellipse.png" alt="custom_polygon_superellipse" title="Superellipse" /></div><div>Defines a superellipse with a concave <code>radius</code> which is placed at each of the <code>superellipse centers</code> locations, according to the <code>relative to</code> points.  If more than one <code>relative to</code> point is specified the set of shapes is duplicated at each <code>relative to</code> location.  A superellipse is primarily used to set custom rounded corners on both concave or convex rectangular corners.</div></div><div style="clear:both;height:1px;">&nbsp;</div></p></li>
 
-<li><p><strong>Rounded Rectangle</strong> - Defines a rectangle with rounded corners according the <code>radius</code> which will have a <code>width</code> and <code>height</code> and will be placed at each of the <code>rounded rectangle centers</code> locations, according to the <code>relative to</code> points.  If more than one <code>relative to</code> point is specified the set of shapes is duplicated at each <code>relative to</code> location.</p></li>
+<li><p><strong>Rectangle</strong><div><div style="float:left;"><img src="http://builder-docs.swillkb.com/images/features/custom_polygon_rectangle.png" alt="custom_polygon_rectangle" title="Rectangle" /></div><div>Defines a rectangle with a <code>width</code> and <code>height</code> which is placed at each of the <code>rectangle centers</code> locations, according to the <code>relative to</code> points.  If more than one <code>relative to</code> point is specified the set of shapes is duplicated at each <code>relative to</code> location.</div></div><div style="clear:both;height:1px;">&nbsp;</div></p></li>
 
-<li><p><strong>Custom Polygon</strong> - You define a custom polygon by defining a <code>closed path of points</code> in <strong>clockwise</strong> order, and this polygon will be places at each of the defined <code>relative to</code> points.</p></li>
+<li><p><strong>Rounded Rectangle</strong><div><div style="float:left;"><img src="http://builder-docs.swillkb.com/images/features/custom_polygon_rounded_rectangle.png" alt="custom_polygon_rounded_rectangle" title="Rounded Rectangle" /></div><div>Defines a rectangle with rounded corners according the <code>radius</code> which will have a <code>width</code> and <code>height</code> and will be placed at each of the <code>rounded rectangle centers</code> locations, according to the <code>relative to</code> points.  If more than one <code>relative to</code> point is specified the set of shapes is duplicated at each <code>relative to</code> location.</div></div><div style="clear:both;height:1px;">&nbsp;</div></p></li>
+
+<li><p><strong>Custom Polygon</strong><div><div style="float:left;"><img src="http://builder-docs.swillkb.com/images/features/custom_polygon_irregular.png" alt="custom_polygon_irregular" title="Irregular Polygon" /></div><div>You define a custom polygon by defining a <code>closed path of points</code> in <strong>clockwise</strong> order, and this polygon will be places at each of the defined <code>relative to</code> points.</div></div><div style="clear:both;height:1px;">&nbsp;</div></p></li>
 </ul>
+
+<style type="text/css">
+  img[alt=custom_polygon_circle],
+  img[alt=custom_polygon_superellipse],
+  img[alt=custom_polygon_rectangle],
+  img[alt=custom_polygon_rounded_rectangle],
+  img[alt=custom_polygon_irregular] {
+    width: 85px;
+    padding-right:10px;
+  }
+</style>
 
 <p>If it is not clear from above, a single polygon definition can be placed in multiple locations by defining more than one <code>center</code> and/or <code>relative to</code> point.</p>
 
@@ -671,14 +690,14 @@ Centers: <code>[7,7];[-7,7];[-7,-7];[7,-7]</code></p>
             a.setAttribute("href", "#" + headers[i].id);
             a.setAttribute("title", headers[i].innerHTML);
             a.innerHTML = headers[i].innerHTML;
-            
+
             li.appendChild(a)
             scrollspy.appendChild(li);
           }
         } else {
           scrollspy.parentElement.removeChild(scrollspy)
         }
-        
+
 
         /* Add permanent link next to the headers */
         var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
@@ -700,3 +719,4 @@ Centers: <code>[7,7];[-7,7];[-7,-7];[7,-7]</code></p>
     <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>
+

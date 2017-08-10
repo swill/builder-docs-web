@@ -6,41 +6,9 @@
     <description>Recent content on Documentation - builder.swillkb.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://builder-docs.swillkb.com/index.xml" rel="self" type="application/rss+xml" />
     
-    <item>
-      <title>Introduction</title>
-      <link>http://builder-docs.swillkb.com/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://builder-docs.swillkb.com/</guid>
-      <description>
-
-&lt;p&gt;The documentation on this site is for the Plate &amp;amp; Case Builder available at &lt;a href=&#34;http://builder.swillkb.com&#34; target=&#34;_blank&#34;&gt;builder.swillkb.com&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;builder-swillkb-com&#34;&gt;builder.swillkb.com&lt;/h2&gt;
-
-&lt;p&gt;The Plate &amp;amp; Case Builder (builder) is a tool to aid in the design and creation of custom keyboards.  The builder generates CAD files to be cut by a laser cutter.&lt;/p&gt;
-
-&lt;p&gt;Keyboard layouts are created at &lt;a href=&#34;http://www.keyboard-layout-editor.com/&#34; target=&#34;_blank&#34;&gt;keyboard-layout-editor.com&lt;/a&gt; (KLE) and the &lt;code&gt;Raw data&lt;/code&gt; is &lt;strong&gt;copied&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://builder-docs.swillkb.com/images/index/kle.png&#34; alt=&#34;kle&#34; title=&#34;Keyboard Layout Editor&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Then the layout is &lt;strong&gt;pasted&lt;/strong&gt; into the builder.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://builder-docs.swillkb.com/images/index/layout.png&#34; alt=&#34;layout&#34; title=&#34;Keyboard Layout&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Then specify the details of the case.  More details can be found in the &lt;a href=&#34;features/&#34;&gt;Features&lt;/a&gt; section.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://builder-docs.swillkb.com/images/index/options.png&#34; alt=&#34;options&#34; title=&#34;Options&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Then you draw your custom plate and case.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://builder-docs.swillkb.com/images/index/plate.png&#34; alt=&#34;plate&#34; title=&#34;Plate&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The CAD files can be downloaded by clicking the file format under each layer.&lt;/p&gt;
-</description>
-    </item>
+	<atom:link href="http://builder-docs.swillkb.com/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Units &amp; Dimensions</title>
@@ -48,18 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://builder-docs.swillkb.com/units-dimensions/</guid>
-      <description>
-
-&lt;h2 id=&#34;builder-units&#34;&gt;Builder Units&lt;/h2&gt;
-
-&lt;p&gt;All units used by the builder are in Millimeters (&lt;code&gt;mm&lt;/code&gt;).  That includes dimensions, coordinates and output.  Unfortunately, the current library I am using for exporting DXF files does not support specifying the units in the file format.  Because of this, the dimensions are in &lt;code&gt;mm&lt;/code&gt; in the drawing, but no units are exported with the DXF file.  Make sure your CAD program is set to &lt;code&gt;mm&lt;/code&gt; when you open the DXF because it will assume your default units.  If you need a file with units defined for your laser cutter, you will want to open the file in LibreCAD (or some other CAD software), make sure the drawing units are set to &lt;code&gt;mm&lt;/code&gt;, and then save as a &lt;code&gt;DXF 2007&lt;/code&gt; file format.  The &lt;code&gt;DXF 2007&lt;/code&gt; format will save the units as well as the dimension in the resulting DXF file.  &lt;a href=&#34;http://builder-docs.swillkb.com/pro-tips/#save-a-dxf-with-units&#34;&gt;Detailed instructions can be found here&amp;hellip;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;key-sizing-spacing&#34;&gt;Key Sizing &amp;amp; Spacing&lt;/h2&gt;
-
-&lt;p&gt;Each key drawn by the builder is based on a multiple of a &lt;code&gt;key unit&lt;/code&gt;, which has a shorthand of &lt;code&gt;u&lt;/code&gt;.  A &lt;code&gt;key unit&lt;/code&gt; is defined to be the amount of space a single 1x1 unit key takes up on a keyboard.  Two 1u keys will be 1u from center to center, which is a constant of &lt;code&gt;19.05mm&lt;/code&gt;.  Each key on a keyboard can be defined as a multiple of a &lt;code&gt;key unit&lt;/code&gt;, so a standard Space Bar would be 6.25u, and a Right Shift would be 2.75u.&lt;/p&gt;
-
-&lt;p&gt;For the most part, you will not have to worry too much about the key sizing since the &lt;a href=&#34;http://www.keyboard-layout-editor.com/&#34; target=&#34;_blank&#34;&gt;keyboard-layout-editor.com&lt;/a&gt; (KLE) has presets for most of the common layouts.  Keep in mind that KLE may not have the right amount of space between the different key clusters on some layouts, so if you are working from a PCB for a TKL or 104 layout, you will want to verify the spacing KLE specifies.&lt;/p&gt;
-</description>
+      <description>Builder Units All units used by the builder are in Millimeters (mm). That includes dimensions, coordinates and output. Unfortunately, the current library I am using for exporting DXF files does not support specifying the units in the file format. Because of this, the dimensions are in mm in the drawing, but no units are exported with the DXF file. Make sure your CAD program is set to mm when you open the DXF because it will assume your default units.</description>
     </item>
     
     <item>
@@ -68,266 +25,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://builder-docs.swillkb.com/features/</guid>
-      <description>
-
-&lt;p&gt;The builder has the following features available when creating keyboard layouts.&lt;/p&gt;
-
-&lt;h2 id=&#34;plate-layout&#34;&gt;Plate Layout&lt;/h2&gt;
-
-&lt;p&gt;The keyboard layout is specified by using the &lt;code&gt;Raw data&lt;/code&gt; from the &lt;a href=&#34;http://www.keyboard-layout-editor.com/&#34; target=&#34;_blank&#34;&gt;keyboard-layout-editor.com&lt;/a&gt; (KLE) tool.  The data from KLE defines the layout of the keyboard, or the footprint of the keys.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://builder-docs.swillkb.com/images/features/layout_layout.png&#34; alt=&#34;layout_layout&#34; title=&#34;Keyboard Layout&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Once you have a layout specified, you can modify individual keys by adding or editing the key&amp;rsquo;s details object.  This details object is a set of parameters defined inside curly brackets before the key. For example, &lt;em&gt;Tab&lt;/em&gt; is defined as &lt;code&gt;{w:1.5},&amp;quot;Tab&amp;quot;&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;The following parameters can be specified to override the default settings on individual keys.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Rotate Switch Cutout &lt;code&gt;{_r:&amp;lt;degrees&amp;gt;}&lt;/code&gt;:&lt;/strong&gt;  Example, &lt;code&gt;{_r:90},&amp;quot;&amp;quot;&lt;/code&gt;.  Rotate the switch cutout independent of the
-stabilizer cutout (assuming there is one).&lt;br /&gt;
-Set in &lt;a href=&#34;#switch-type&#34;&gt;Switch Type&lt;/a&gt; &lt;i&gt;&amp;nbsp;&amp;nbsp;vs&amp;nbsp;&amp;nbsp;&lt;/i&gt; Adding &lt;code&gt;_r:90&lt;/code&gt;&lt;br /&gt;
-&lt;img src=&#34;http://builder-docs.swillkb.com/images/features/layout_rotate_switch.png&#34; alt=&#34;layout_rotate_switch&#34; title=&#34;Rotate Switch&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Rotate Stabilizer Cutout &lt;code&gt;{_rs:&amp;lt;degrees&amp;gt;}&lt;/code&gt;:&lt;/strong&gt;  Example, &lt;code&gt;{_rs:180},&amp;quot;&amp;quot;&lt;/code&gt;.  Rotate the stabilizer cutout independent of the switch cutout.&lt;br /&gt;
-Set in &lt;a href=&#34;#stabilizer-type&#34;&gt;Stabilizer Type&lt;/a&gt; &lt;i&gt;&amp;nbsp;&amp;nbsp;vs&amp;nbsp;&amp;nbsp;&lt;/i&gt; Adding &lt;code&gt;_rs:180&lt;/code&gt;&lt;br /&gt;
-&lt;img src=&#34;http://builder-docs.swillkb.com/images/features/layout_rotate_stab.png&#34; alt=&#34;layout_rotate_stab&#34; title=&#34;Rotate Stabilizer&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Switch Cutout Type &lt;code&gt;{_t:&amp;lt;1-4&amp;gt;}&lt;/code&gt;:&lt;/strong&gt;  Example, &lt;code&gt;{_t:1},&amp;quot;&amp;quot;&lt;/code&gt;.  Numbers are in the same order as the images.&lt;br /&gt;
-Set in &lt;a href=&#34;#switch-type&#34;&gt;Switch Type&lt;/a&gt; &lt;i&gt;&amp;nbsp;&amp;nbsp;vs&amp;nbsp;&amp;nbsp;&lt;/i&gt; Adding &lt;code&gt;_t:1&lt;/code&gt;&lt;br /&gt;
-&lt;img src=&#34;http://builder-docs.swillkb.com/images/features/layout_change_switch.png&#34; alt=&#34;layout_change_switch&#34; title=&#34;Change Switch Type&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Stabilizer Cutout Type &lt;code&gt;{_s:&amp;lt;0-4&amp;gt;}&lt;/code&gt;:&lt;/strong&gt;  Example, &lt;code&gt;{_s:3},&amp;quot;&amp;quot;&lt;/code&gt;.  Numbers are in the same order as the dropdown list.  The special &lt;code&gt;{_s:0},&amp;quot;&amp;quot;&lt;/code&gt; options is used to remove the stabilizer completely for an otherwise stabilized key.&lt;br /&gt;
-Set in &lt;a href=&#34;#stabilizer-type&#34;&gt;Stabilizer Type&lt;/a&gt; &lt;i&gt;&amp;nbsp;&amp;nbsp;vs&amp;nbsp;&amp;nbsp;&lt;/i&gt; Adding &lt;code&gt;_s:3&lt;/code&gt;&lt;br /&gt;
-&lt;img src=&#34;http://builder-docs.swillkb.com/images/features/layout_change_stab.png&#34; alt=&#34;layout_change_stab&#34; title=&#34;Change Stabilizer Type&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Custom Polygons &lt;code&gt;{_c:&amp;quot;&amp;lt;index&amp;gt;[,index]&amp;quot;}&lt;/code&gt;:&lt;/strong&gt;  Example, &lt;code&gt;{_c:&amp;quot;0,1&amp;quot;}&lt;/code&gt;.  The index values are found in the &lt;a href=&#34;#custom-polygons&#34;&gt;Custom Polygons&lt;/a&gt; section associated with each line item.  The specified custom polygon(s) will be drawn relative to the center point of the specific switch.&lt;br /&gt;
-Set in &lt;a href=&#34;#stabilizer-type&#34;&gt;Stabilizer Type&lt;/a&gt; &lt;i&gt;&amp;nbsp;&amp;nbsp;vs&amp;nbsp;&amp;nbsp;&lt;/i&gt; Adding &lt;code&gt;_c:&amp;quot;0,1&amp;quot;&lt;/code&gt; with the appropriate Custom Polygons&lt;br /&gt;
-&lt;img src=&#34;http://builder-docs.swillkb.com/images/features/layout_custom_polygons.png&#34; alt=&#34;layout_custom_polygons&#34; title=&#34;Add Custom Polygons&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Cutting Kerf &lt;code&gt;{_k:&amp;lt;mm&amp;gt;}&lt;/code&gt;:&lt;/strong&gt;  Example, &lt;code&gt;{_k:0.25},&amp;quot;&amp;quot;&lt;/code&gt;.  The kerf value for an individual switch/stabilizer cutout,
-this overrides the value set in the &lt;a href=&#34;#kerf&#34;&gt;Kerf&lt;/a&gt; section.  Values are in mm (without the unit).&lt;br /&gt;
-Set in &lt;a href=&#34;#kerf&#34;&gt;Kerf&lt;/a&gt; &lt;i&gt;&amp;nbsp;&amp;nbsp;vs&amp;nbsp;&amp;nbsp;&lt;/i&gt; Adding &lt;code&gt;_k:1&lt;/code&gt;&lt;br /&gt;
-&lt;img src=&#34;http://builder-docs.swillkb.com/images/features/layout_change_kerf.png&#34; alt=&#34;layout_change_kerf&#34; title=&#34;Change Kerf&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Here is an example using all of them together: &lt;code&gt;{_r:90, _rs:180, _t:1, _s:2, _k:0.25},&amp;quot;&amp;quot;&lt;/code&gt;&lt;/p&gt;
-
-&lt;style type=&#34;text/css&#34;&gt;
-    img[alt=layout_rotate_switch],
-    img[alt=layout_rotate_stab],
-    img[alt=layout_change_switch],
-    img[alt=layout_change_stab],
-  img[alt=layout_custom_polygons],
-    img[alt=layout_change_kerf] {
-        width: 285px;
-    }
-&lt;/style&gt;
-
-&lt;h2 id=&#34;switch-type&#34;&gt;Switch Type&lt;/h2&gt;
-
-&lt;p&gt;There are currently 4 different switch cutouts which you can choose from.  Each have their own pros and cons which we will cover in this section.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Classic MX Cutout &lt;code&gt;{_t:1}&lt;/code&gt;&lt;/strong&gt;&lt;div&gt;&lt;div style=&#34;float:left;&#34;&gt;&lt;img src=&#34;http://builder-docs.swillkb.com/images/features/switch_type_classic.png&#34; alt=&#34;switch_type_classic&#34; title=&#34;Classic MX&#34; /&gt;&lt;/div&gt;&lt;div&gt;The standard cutout used by all non-custom keyboards.  This cutout does not allow you to open the switches without desoldering them from the PCB.  If you are hand wiring a keyboard, this cutout is the most stable and you will be able to unclip the switch from the plate without desoldering.&lt;/div&gt;&lt;/div&gt;&lt;div style=&#34;clear:both;height:1px;&#34;&gt;&amp;nbsp;&lt;/div&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;MX + Alps Cutout &lt;code&gt;{_t:2}&lt;/code&gt;&lt;/strong&gt;&lt;div&gt;&lt;div style=&#34;float:left;&#34;&gt;&lt;img src=&#34;http://builder-docs.swillkb.com/images/features/switch_type_mx_alps.png&#34; alt=&#34;switch_type_mx_alps&#34; title=&#34;MX + Alps&#34; /&gt;&lt;/div&gt;&lt;div&gt;A cutout with a good balance of flexibility and fabrication cost. It is less expensive to produce than any of the other openable cutouts.  It supports MX switches with the ability to open them without desoldering as well as Alps switches.  It is known to be the least stable of all the cutouts, so it does have trade-offs.&lt;/div&gt;&lt;/div&gt;&lt;div style=&#34;clear:both;height:1px;&#34;&gt;&amp;nbsp;&lt;/div&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;MX Openable Cutout &lt;code&gt;{_t:3}&lt;/code&gt;&lt;/strong&gt;&lt;div&gt;&lt;div style=&#34;float:left;&#34;&gt;&lt;img src=&#34;http://builder-docs.swillkb.com/images/features/switch_type_mx.png&#34; alt=&#34;switch_type_mx&#34; title=&#34;MX Openable&#34; /&gt;&lt;/div&gt;&lt;div&gt;The most popular MX specific cutout which allows for switch opening without desoldering from the PCB. It is the most stable openable MX cutout, but you will pay a little more to get a plate cut with this cutout than the previous cutout.&lt;/div&gt;&lt;/div&gt;&lt;div style=&#34;clear:both;height:1px;&#34;&gt;&amp;nbsp;&lt;/div&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Alps Cutout &lt;code&gt;{_t:4}&lt;/code&gt;&lt;/strong&gt;&lt;div&gt;&lt;div style=&#34;float:left;&#34;&gt;&lt;img src=&#34;http://builder-docs.swillkb.com/images/features/switch_type_alps.png&#34; alt=&#34;switch_type_alps&#34; title=&#34;Alps&#34; /&gt;&lt;/div&gt;&lt;div&gt;A standard Alps cutout with no frills.  It is compatible with the old school Alps as well as the Matias Alps switches.&lt;/div&gt;&lt;/div&gt;&lt;div style=&#34;clear:both;height:1px;&#34;&gt;&amp;nbsp;&lt;/div&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;style type=&#34;text/css&#34;&gt;
-  img[alt=switch_type_classic],
-  img[alt=switch_type_mx_alps],
-  img[alt=switch_type_mx],
-  img[alt=switch_type_alps] {
-    width: 85px;
-    padding-right:10px;
-  }
-&lt;/style&gt;
-
-&lt;h2 id=&#34;stabilizer-type&#34;&gt;Stabilizer Type&lt;/h2&gt;
-
-&lt;p&gt;There are currently 4 different stabilizer cutouts which you can choose from.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Cherry + Costar Stabilizer &lt;code&gt;{_s:1}&lt;/code&gt;&lt;/strong&gt;&lt;div&gt;&lt;div style=&#34;float:left;&#34;&gt;&lt;img src=&#34;http://builder-docs.swillkb.com/images/features/stab_type_cherry_costar.png&#34; alt=&#34;stab_type_cherry_costar&#34; title=&#34;Classic MX&#34; /&gt;&lt;/div&gt;&lt;div&gt;A stabilizer cutout which supports; Cherry PCB Mount, Cherry Plate Mount and Costar stabilizers.  While this cutout supports Cherry Plate Mount stabilizers, if you know you are going to use that stabilizer, the Cherry Stabilizer cutout is a better option.  This is due to the fact the extra top cutout is where the stabilizer clips onto the plate, so it won&amp;rsquo;t clip in there.&lt;/div&gt;&lt;/div&gt;&lt;div style=&#34;clear:both;height:1px;&#34;&gt;&amp;nbsp;&lt;/div&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Cherry Stabilizer &lt;code&gt;{_s:2}&lt;/code&gt;&lt;/strong&gt;&lt;div&gt;&lt;div style=&#34;float:left;&#34;&gt;&lt;img src=&#34;http://builder-docs.swillkb.com/images/features/stab_type_cherry.png&#34; alt=&#34;stab_type_cherry&#34; title=&#34;MX + Alps&#34; /&gt;&lt;/div&gt;&lt;div&gt;A stabilizer cutout which supports both Cherry PCB Mount and Cherry Plate Mount stabilizers.  If you plan to use Cherry Plate Mount stabilizers, this is your best option because the stabilizer will clip in on the top.&lt;/div&gt;&lt;/div&gt;&lt;div style=&#34;clear:both;height:1px;&#34;&gt;&amp;nbsp;&lt;/div&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Costar Stabilizer &lt;code&gt;{_s:3}&lt;/code&gt;&lt;/strong&gt;&lt;div&gt;&lt;div style=&#34;float:left;&#34;&gt;&lt;img src=&#34;http://builder-docs.swillkb.com/images/features/stab_type_costar.png&#34; alt=&#34;stab_type_costar&#34; title=&#34;MX Openable&#34; /&gt;&lt;/div&gt;&lt;div&gt;A stabilizer cutout which only supports Costar stabilizers.  This is the cheapest MX compatible stabilizer cutout, so it will have a lower fabrication cost.&lt;/div&gt;&lt;/div&gt;&lt;div style=&#34;clear:both;height:1px;&#34;&gt;&amp;nbsp;&lt;/div&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Alps Stabilizer &lt;code&gt;{_s:4}&lt;/code&gt;&lt;/strong&gt;&lt;div&gt;&lt;div style=&#34;float:left;&#34;&gt;&lt;img src=&#34;http://builder-docs.swillkb.com/images/features/stab_type_alps.png&#34; alt=&#34;stab_type_alps&#34; title=&#34;Alps&#34; /&gt;&lt;/div&gt;&lt;div&gt;A stabilizer cutout which supports Alps stabilizers for known sizes.  If the size is not a known Alps stabilizer size, a Costar will be drawn instead.  EG: A 2.25 unit key.&lt;/div&gt;&lt;/div&gt;&lt;div style=&#34;clear:both;height:1px;&#34;&gt;&amp;nbsp;&lt;/div&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;style type=&#34;text/css&#34;&gt;
-  img[alt=stab_type_cherry_costar],
-  img[alt=stab_type_cherry],
-  img[alt=stab_type_costar],
-  img[alt=stab_type_alps] {
-    width: 150px;
-    padding-right:5px;
-  }
-&lt;/style&gt;
-
-&lt;h2 id=&#34;case-type&#34;&gt;Case Type&lt;/h2&gt;
-
-&lt;p&gt;The Case Type lets you choose how your layout is installed.  You have a few different options, outlined as follows:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;None&lt;/strong&gt; - Don&amp;rsquo;t define a case at all.  This type will produce only the switch layer with your layout on it.  You still have options for modifying this output with things like &lt;a href=&#34;#edge-padding&#34;&gt;Edge Padding&lt;/a&gt; or &lt;a href=&#34;#custom-polygons&#34;&gt;Custom Polygons&lt;/a&gt;, but it will not produce additional layers for building a case.  If you would like additional layers for actually building a full case, choose the &lt;strong&gt;Sandwich&lt;/strong&gt; case type.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Poker (60%)&lt;/strong&gt; - Draw a plate to be used with standard Poker compatible 60% cases. This layout is based on the GH60 PCB drawings.  The holes default to 5mm in diameter, so the screw is intended to pass through the plate with the plate/PCB being held to the case by fixing the PCB to the case.  If you would like to use a Poker style case and hand wire the board instead of using a PCB, you can use standoffs and set the &lt;a href=&#34;#hole-diameter&#34;&gt;Hole Diameter&lt;/a&gt; smaller to make the screws support the plate.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Sandwich&lt;/strong&gt; - Draw a plate as well as additional layers to build a layered case.  The &lt;code&gt;switch&lt;/code&gt; layer goes on the top, then there are essentially ring layers to create empty space for the PCB or wiring and a &lt;code&gt;bottom&lt;/code&gt; plate.  There are two types of ring layers; &lt;code&gt;open&lt;/code&gt; which has a cutout for the USB connector, and &lt;code&gt;closed&lt;/code&gt; which has no cutouts.  You can choose how many of each layer is suitable for your case.  This case type produces the CAD files for all the layers required to build a layered sandwich case.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;hole-diameter&#34;&gt;Hole Diameter&lt;/h2&gt;
-
-&lt;div class=&#34;admonition note&#34;&gt;
-&lt;p class=&#34;admonition-title&#34;&gt;Note&lt;/p&gt;
-&lt;p&gt;This option only applies to the &lt;strong&gt;&lt;code&gt;Poker&lt;/code&gt;&lt;/strong&gt; case type.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The default hole (and slot) diameter is 5mm for the Poker case type.  This option lets you specify what diameter you want these holes and slots to be.  This is useful if you do not have a PCB to hold the plate to the case.  This would allow you to use a value like 2.5mm and use M2 screws with a standoff (a nut or nylon washers) to fix the plate to the Poker case itself.  Usually the screws pass through the Poker plate and the PCB is used to hold the plate to the case.  This allows you to change this default behavior and make fix the plate directly to the Poker case.&lt;/p&gt;
-
-&lt;h2 id=&#34;usb-cutout&#34;&gt;USB Cutout&lt;/h2&gt;
-
-&lt;div class=&#34;admonition note&#34;&gt;
-&lt;p class=&#34;admonition-title&#34;&gt;Note&lt;/p&gt;
-&lt;p&gt;This option only applies to the &lt;strong&gt;&lt;code&gt;Sandwich&lt;/code&gt;&lt;/strong&gt; case type.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;These option lets you move the USB cutout &lt;code&gt;location&lt;/code&gt; in the &lt;em&gt;open&lt;/em&gt; layer of the &lt;a href=&#34;#case-type&#34;&gt;Sandwich case type&lt;/a&gt;.  The default of &lt;code&gt;0&lt;/code&gt;mm places the USB cutout at the center of the total width of the layout on the top side of the &lt;em&gt;open&lt;/em&gt; layer of the case. The &lt;code&gt;width&lt;/code&gt; of the cutout defaults to &lt;code&gt;10&lt;/code&gt;mm, and can be set to your desired width.  It is very difficult to represent the location of the cutout in relation to a potential PCB in a usable fashion, so instead I work entirely off the width and center points of the total case drawn.  If you enter values that would put the USB cutout outside of the inner opening of the case, the cutout will be placed with one edge against the side of the inner opening.  This will put the edge of the cutout the &lt;a href=&#34;#mount-holes&#34;&gt;edge width&lt;/a&gt; distance from the outside edge of the case.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;location&lt;/code&gt; controls: &lt;code&gt;0&lt;/code&gt; = center, &lt;code&gt;neg (-)&lt;/code&gt; = move left, &lt;code&gt;pos (+)&lt;/code&gt; = move right&lt;br /&gt;
-Example: &lt;em&gt;GH60&lt;/em&gt; = &lt;code&gt;-124.3&lt;/code&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;mount-holes&#34;&gt;Mount Holes&lt;/h2&gt;
-
-&lt;div class=&#34;admonition note&#34;&gt;
-&lt;p class=&#34;admonition-title&#34;&gt;Note&lt;/p&gt;
-&lt;p&gt;This option only applies to the &lt;strong&gt;&lt;code&gt;Sandwich&lt;/code&gt;&lt;/strong&gt; case type.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The &lt;a href=&#34;#case-type&#34;&gt;Sandwich case type&lt;/a&gt; has the option to add mount holes which will be used to screw together the case.  This feature is optional because some people may choose to glue, or otherwise fix the layers together, so mount holes would not be desired.&lt;/p&gt;
-
-&lt;p&gt;If specified, the &lt;code&gt;number of holes&lt;/code&gt; must be greater than or equal to &lt;code&gt;4&lt;/code&gt; and must be an &lt;em&gt;even&lt;/em&gt; number.  The first &lt;code&gt;4&lt;/code&gt; holes will always be placed at the corners of the case, and the remaining holes will then be evenly distributed based on the largest remaining space.  The holes will be evenly distributed around the board according to a combination of the &lt;code&gt;diameter&lt;/code&gt; of the hole and the &lt;a href=&#34;#edge-padding&#34;&gt;Edge Padding&lt;/a&gt;.  If the Edge Padding is greater than the hole &lt;code&gt;diameter&lt;/code&gt;, then the holes will be evenly distributed around all 4 sides of the case.  If the Edge Padding is less than or equal to the hole &lt;code&gt;diameter&lt;/code&gt; on two opposing sides, then the holes will be evenly distributed on the other two opposing sides of the case.&lt;/p&gt;
-
-&lt;p&gt;The &lt;code&gt;edge width&lt;/code&gt; defines the width of the wall on all four sides of the sandwich case, assuming the &lt;a href=&#34;#edge-padding&#34;&gt;Edge Padding&lt;/a&gt; is greater than or equal to the &lt;code&gt;edge width&lt;/code&gt;.  The holes will be placed along the center of the &lt;code&gt;edge width&lt;/code&gt;.  Be sure to leave enough material on both sides of the holes to maintain structural integrity when the case is assembled.  The difference between the Edge Padding and the &lt;code&gt;edge width&lt;/code&gt; will represent empty space inside the case.  This is useful if you plan to put additional components inside the keyboard case, like a Raspberry Pi for example.&lt;/p&gt;
-
-&lt;p&gt;You will want to choose the &lt;code&gt;diameter&lt;/code&gt; of the hole based on the screws you plan to use for assembly.  For example, if you plan to use an M3 screw with a nut on the opposite side, then you would likely want a value of about &lt;code&gt;3.2&lt;/code&gt;mm.  If you plan to use an M3 screw and tap the hole so no nut is required, then you would likely want a value of about &lt;code&gt;2.5&lt;/code&gt;mm.&lt;/p&gt;
-
-&lt;h2 id=&#34;edge-padding&#34;&gt;Edge Padding&lt;/h2&gt;
-
-&lt;p&gt;The edge padding defines the amount of space between the edge of the case and the edge of the keyboard layout, which essentially lines up with the edge of the key cap.  This feature is optional for all case types except the &lt;a href=&#34;#case-type&#34;&gt;Sandwich case&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The edge padding can be either positive or negative.  A positive value will add to the total case size in that direction.  A negative value will cut away from the plate layer that much material.  Be careful to leave enough material next to the switches if you use negative values.  A value of &lt;code&gt;0&lt;/code&gt; will remove that wall of the sandwich case, assuming &lt;a href=&#34;#kerf&#34;&gt;Kerf&lt;/a&gt; is not set to a positive value.  If Kerf is set to a positive value, then you will need to define the padding as negative kerf (eg: &lt;code&gt;-0.15&lt;/code&gt;) in order to remove that wall of the case completely.  Please note that ordering from &lt;a href=&#34;http://builder.swillkb.com&#34; target=&#34;_blank&#34;&gt;builder.swillkb.com&lt;/a&gt; will result in your layout being redrawn with the optimal kerf for the selected vendor.  If you are trying to remove case walls, you may have to edit your Edge Padding to account for the applied kerf.&lt;/p&gt;
-
-&lt;p&gt;The edge padding is required on at least two opposing sides of the Sandwich case.  If you leave two opposing sides open on a Sandwich case, you reduce the material waste to fabricate the middle layers, so the fabrication costs are considerably less.&lt;/p&gt;
-
-&lt;h2 id=&#34;plate-corners&#34;&gt;Plate Corners&lt;/h2&gt;
-
-&lt;p&gt;The plate corners feature lets you add rounded corners to your plate/case, which adds a really nice aesthetic to a case.&lt;/p&gt;
-
-&lt;p&gt;The value entered defines the radius of each corner in millimeters.&lt;/p&gt;
-
-&lt;h2 id=&#34;custom-polygons&#34;&gt;Custom Polygons&lt;/h2&gt;
-
-&lt;p&gt;The custom polygons feature lets you totally customize the output of your plate/case.  If you want additional cutouts, such as holes or adapting a cutout, it can be done with a &lt;em&gt;Cut&lt;/em&gt; operation.  If you want to add additional material to the case, to make it more interesting or to serve a specific purpose, use the &lt;em&gt;Add&lt;/em&gt; operation.  The polygon operations can be done on any combination of drawn layers.&lt;/p&gt;
-
-&lt;p&gt;There are two different polygon operations which you can use.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Add&lt;/strong&gt; - This will add material according to the defined path for all selected layers.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Cut&lt;/strong&gt; - This will remove material according to the defined path for all selected layers.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Currently there are four types of polygons which can be added or removed from the drawings.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Circle&lt;/strong&gt; - Defines a circle with a &lt;code&gt;diameter&lt;/code&gt; which is placed at each of the &lt;code&gt;circle centers&lt;/code&gt; locations, according to the &lt;code&gt;relative to&lt;/code&gt; points.  If more than one &lt;code&gt;relative to&lt;/code&gt; point is specified the set of shapes is duplicated at each &lt;code&gt;relative to&lt;/code&gt; location.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Rectangle&lt;/strong&gt; - Defines a rectangle with a &lt;code&gt;width&lt;/code&gt; and &lt;code&gt;height&lt;/code&gt; which is placed at each of the &lt;code&gt;rectangle centers&lt;/code&gt; locations, according to the &lt;code&gt;relative to&lt;/code&gt; points.  If more than one &lt;code&gt;relative to&lt;/code&gt; point is specified the set of shapes is duplicated at each &lt;code&gt;relative to&lt;/code&gt; location.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Rounded Rectangle&lt;/strong&gt; - Defines a rectangle with rounded corners according the &lt;code&gt;radius&lt;/code&gt; which will have a &lt;code&gt;width&lt;/code&gt; and &lt;code&gt;height&lt;/code&gt; and will be placed at each of the &lt;code&gt;rounded rectangle centers&lt;/code&gt; locations, according to the &lt;code&gt;relative to&lt;/code&gt; points.  If more than one &lt;code&gt;relative to&lt;/code&gt; point is specified the set of shapes is duplicated at each &lt;code&gt;relative to&lt;/code&gt; location.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Custom Polygon&lt;/strong&gt; - You define a custom polygon by defining a &lt;code&gt;closed path of points&lt;/code&gt; in &lt;strong&gt;clockwise&lt;/strong&gt; order, and this polygon will be places at each of the defined &lt;code&gt;relative to&lt;/code&gt; points.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;If it is not clear from above, a single polygon definition can be placed in multiple locations by defining more than one &lt;code&gt;center&lt;/code&gt; and/or &lt;code&gt;relative to&lt;/code&gt; point.&lt;/p&gt;
-
-&lt;div class=&#34;admonition note&#34;&gt;
-&lt;p class=&#34;admonition-title&#34;&gt;Note&lt;/p&gt;
-&lt;p&gt;If you define a shape and do not specify any &lt;code&gt;relative to&lt;/code&gt; points, the shape will not be drawn.  However, if you use the &lt;code&gt;{_c:&amp;quot;&amp;lt;index&amp;gt;[,index]&amp;quot;},&amp;quot;key&amp;quot;&lt;/code&gt; formatting defined in the &lt;a href=&#34;#plate-layout&#34;&gt;Plate Layout&lt;/a&gt; section, the center of the associated key will be used as the &lt;code&gt;relative to&lt;/code&gt; point.  This is very useful for placing custom cutouts relative to specific keys in the plate layout.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Coordinates and Positioning&lt;/strong&gt;&lt;br /&gt;
-Points are defined inside square brackets (&lt;code&gt;[ ]&lt;/code&gt;) and separated by a semicolon (&lt;code&gt;;&lt;/code&gt;).&lt;/p&gt;
-
-&lt;p&gt;The point &lt;code&gt;[0,0]&lt;/code&gt; is defined to be the center of the case.  The values &lt;code&gt;x&lt;/code&gt; and &lt;code&gt;y&lt;/code&gt; can be used in the coordinate system to represent &lt;em&gt;&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt; the total width&lt;/em&gt; and &lt;em&gt;&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt; the total height&lt;/em&gt; respectively.  This means the following locations are represented as follows; top left = &lt;code&gt;[-x,-y]&lt;/code&gt;, top right = &lt;code&gt;[x,-y]&lt;/code&gt;, bottom left = &lt;code&gt;[-x,y]&lt;/code&gt;, bottom right = &lt;code&gt;[x,y]&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;In addition to being able to use &lt;code&gt;x&lt;/code&gt; and &lt;code&gt;y&lt;/code&gt; to help represent a point in space, you can also represent a coordinate as a set of arithmetic equations.  For example, if you wanted to represent a point on the top side of the case which splits the difference between the center of the board and 20mm from the top left corner, you would represent that point as: &lt;code&gt;[(-x+20)/2, -y]&lt;/code&gt;.  This provides a lot of flexibility in representing points related to the plate/case and enables you to have handle symmetry in an intuitive manor.&lt;/p&gt;
-
-&lt;p&gt;In addition to being able to place custom polygons based on positioning relative the size of the case, custom polygons can be placed based on the center point of a switch for a specific key in the layout.  This is done by adding the &lt;code&gt;{_c:&amp;quot;0,1&amp;quot;}&lt;/code&gt; details object, where &lt;code&gt;0&lt;/code&gt; and &lt;code&gt;1&lt;/code&gt; are the index values for the custom polygons to be drawn relative to that switch center.  This is very useful if you want to modify things like the stabilizer cutout for a 3mm switch plate so a cherry stabilizer wire has somewhere to go.&lt;/p&gt;
-
-&lt;p&gt;Check the &lt;a href=&#34;#plate-layout&#34;&gt;Plate Layout&lt;/a&gt; section for additional details regarding the individual key based placement.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Example 1&lt;/strong&gt;&lt;br /&gt;
-This feature is best described with an example, so here is a 60% layout with added tabs and holes in the tabs.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Custom Polygon&lt;/em&gt;&lt;br /&gt;
-Op: &lt;code&gt;Add&lt;/code&gt;&lt;br /&gt;
-Rel-To: &lt;code&gt;[-x,-y]; [x-30,-y]; [x-30,y]; [-x,y]&lt;/code&gt;&lt;br /&gt;
-Path: &lt;code&gt;[0,0]; [5,-5]; [25,-5]; [30,0]; [25,5]; [5,5]&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Circle&lt;/em&gt;&lt;br /&gt;
-Op: &lt;code&gt;Cut&lt;/code&gt;&lt;br /&gt;
-Diameter: &lt;code&gt;3&lt;/code&gt;&lt;br /&gt;
-Rel-To: &lt;code&gt;[0,0]&lt;/code&gt;&lt;br /&gt;
-Centers: &lt;code&gt;[-x+15,-y-1.5]; [x-15,-y-1.5]; [-x+15,y+1.5]; [x-15,y+1.5]&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://builder-docs.swillkb.com/images/features/custom_polygon_eg1.png&#34; alt=&#34;custom_polygon_eg1&#34; title=&#34;Custom Polygons Example 1&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Example 2&lt;/strong&gt;&lt;br /&gt;
-In this contrived example, the use of cutouts associated with specific keys is illustrated.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Plate Layout&lt;/em&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[{_c:&amp;quot;0&amp;quot;},&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;],
-[&amp;quot;&amp;quot;,{_c:&amp;quot;0&amp;quot;},&amp;quot;&amp;quot;,&amp;quot;&amp;quot;],
-[&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,{_c:&amp;quot;0&amp;quot;},&amp;quot;&amp;quot;]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;em&gt;Circle&lt;/em&gt; (index: 0)&lt;br /&gt;
-Op: &lt;code&gt;Cut&lt;/code&gt;&lt;br /&gt;
-Diameter: &lt;code&gt;3&lt;/code&gt;&lt;br /&gt;
-Rel-To: &lt;em&gt;not defined&lt;/em&gt;&lt;br /&gt;
-Centers: &lt;code&gt;[7,7];[-7,7];[-7,-7];[7,-7]&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://builder-docs.swillkb.com/images/features/custom_polygon_eg2.png&#34; alt=&#34;custom_polygon_eg2&#34; title=&#34;Custom Polygons Example 2&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;kerf&#34;&gt;Kerf&lt;/h2&gt;
-
-&lt;p&gt;The kerf feature allows you to account for the kerf of the cutting tool when the part is being fabricated.  Kerf is the width of the material removed by a cutting tool.  If you do not account for kerf, the part will be smaller than expected by &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt; the tool&amp;rsquo;s kerf value on all cut sides. The kerf is calculated along the cut line, so &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt; will be inside the line and &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt; will be outside the line.  So for example, if the kerf of a cutting tool is 0.2mm, that means that an extra 0.1mm will be removed from the plate when it is cut (the other 0.1mm is removed from the off cut).  I account for this, so if the kerf is set to 0.2mm, the resulting 14mm square hole would be drawn as a 13.8mm square.  Keep in mind that the different processes will have different values for kerf, so check with the manufacturer.  Also, keep in mind that the type of material and its thickness plays a role in the width of the kerf.&lt;/p&gt;
-
-&lt;p&gt;If you order your job through the &lt;a href=&#34;http://builder.swillkb.com&#34; target=&#34;_blank&#34;&gt;builder.swillkb.com&lt;/a&gt; tool, then the parts will be redrawn in the tool with the kerf value optimized for the selected fabrication vendor.&lt;/p&gt;
-
-&lt;h2 id=&#34;key-unit&#34;&gt;Key Unit&lt;/h2&gt;
-
-&lt;p&gt;The key unit feature allows the default key unit size of &lt;code&gt;19.05mm&lt;/code&gt; to be modified.  This feature is useful if a PCB designer has used a value such as &lt;code&gt;19.00mm&lt;/code&gt; instead of the standard &lt;code&gt;19.05mm&lt;/code&gt; for the sizing of a single key unit.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; This feature does not modify the spacing of the space bar stabilizer position.&lt;/p&gt;
-
-&lt;h2 id=&#34;line-color&#34;&gt;Line Color&lt;/h2&gt;
-
-&lt;p&gt;The line color feature allows you to adjust the color of the cut lines.  Some laser cutters are picky about the color of the cut lines in the SVG, so this lets you conform to their requests.  If you need to change the line color for your fabrication shop, specify the new color here.  Many colors can be referenced just by specifying the name (eg: &lt;code&gt;blue&lt;/code&gt;) but you can also use Hex values (eg: &lt;code&gt;#2E69B3&lt;/code&gt;).&lt;/p&gt;
-
-&lt;h2 id=&#34;line-weight&#34;&gt;Line Weight&lt;/h2&gt;
-
-&lt;p&gt;The line weight feature allows you to adjust the stroke weight of the cut lines.  Some laser cutters are picky about the weight of the cut lines in the SVG, so this lets you conform to their requests.  If you need to change the line weight for your fabrication shop, specify the new weight here.  The builder defaults to &lt;code&gt;0.05&lt;/code&gt;mm and overrides are expected to be in &lt;code&gt;mm&lt;/code&gt; (but only as a floating point number without any &lt;code&gt;mm&lt;/code&gt; text).&lt;/p&gt;
-</description>
+      <description>The builder has the following features available when creating keyboard layouts.
+Plate Layout The keyboard layout is specified by using the Raw data from the keyboard-layout-editor.com (KLE) tool. The data from KLE defines the layout of the keyboard, or the footprint of the keys.
+Once you have a layout specified, you can modify individual keys by adding or editing the key&amp;rsquo;s details object. This details object is a set of parameters defined inside curly brackets before the key.</description>
     </item>
     
     <item>
@@ -336,77 +36,8 @@ Centers: &lt;code&gt;[7,7];[-7,7];[-7,-7];[7,-7]&lt;/code&gt;&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://builder-docs.swillkb.com/pro-tips/</guid>
-      <description>
-
-&lt;p&gt;The builder is a tool with a &lt;em&gt;LOT&lt;/em&gt; of different options and possibilities.  As a result, there are quite a few different tips and tricks that can/should be documented.  If you know of additional tips which are not documented here, please &lt;a href=&#34;http://builder-docs.swillkb.com/contribute/&#34;&gt;contribute&lt;/a&gt; to the documentation.&lt;/p&gt;
-
-&lt;h2 id=&#34;svg-to-stl-conversion&#34;&gt;SVG to STL Conversion&lt;/h2&gt;
-
-&lt;p&gt;If you want to 3D print a prototype of your design, you will need to convert the 2-dimensional SVG to a 3-dimensional STL file format in order for your 3D printer to be able to work with it.  I have created a video tutorial for how to do this conversion for your convenience.&lt;/p&gt;
-
-&lt;div class=&#34;admonition note&#34;&gt;
-&lt;p class=&#34;admonition-title&#34;&gt;Note&lt;/p&gt;
-&lt;p&gt;In the video I say to extrude the faces before you do the cut.  If you do this, it will take longer to do the cut.  After doing some testing I recommend that you do the cut of the unioned faces before doing the extrude in order to speed up the process.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;div class=&#34;video-wrapper&#34;&gt;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/8CROo67W24M&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
-&lt;style type=&#34;text/css&#34;&gt;
-.video-wrapper {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
-    padding-top: 25px;
-    height: 0;
-}
-.video-wrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-&lt;/style&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;support-multiple-layouts&#34;&gt;Support Multiple Layouts&lt;/h2&gt;
-
-&lt;p&gt;One of the most common questions I get is &amp;ldquo;How do I support multiple layouts?&amp;rdquo;.  One of the most common examples is something like supporting both a stepped caps lock as well as a regular full touch caps lock in the same layout.  Another example is supporting both a regular right shift (2.75u) as well as a short right shift (1.75u + 1u) on the same layout.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;[&amp;quot;~\n`&amp;quot;,&amp;quot;!\n1&amp;quot;,&amp;quot;@\n2&amp;quot;,&amp;quot;#\n3&amp;quot;,&amp;quot;$\n4&amp;quot;,&amp;quot;%\n5&amp;quot;,&amp;quot;^\n6&amp;quot;,&amp;quot;&amp;amp;\n7&amp;quot;,&amp;quot;*\n8&amp;quot;,&amp;quot;(\n9&amp;quot;,&amp;quot;)\n0&amp;quot;,&amp;quot;_\n-&amp;quot;,&amp;quot;+\n=&amp;quot;,{w:2},&amp;quot;Backspace&amp;quot;],
-[{w:1.5},&amp;quot;Tab&amp;quot;,&amp;quot;Q&amp;quot;,&amp;quot;W&amp;quot;,&amp;quot;E&amp;quot;,&amp;quot;R&amp;quot;,&amp;quot;T&amp;quot;,&amp;quot;Y&amp;quot;,&amp;quot;U&amp;quot;,&amp;quot;I&amp;quot;,&amp;quot;O&amp;quot;,&amp;quot;P&amp;quot;,&amp;quot;{\n[&amp;quot;,&amp;quot;}\n]&amp;quot;,{w:1.5},&amp;quot;|\n\\&amp;quot;],
-[{w:1.25},&amp;quot;Stepped&amp;quot;,{w:1.75,x:-1.25},&amp;quot;Caps Lock&amp;quot;,&amp;quot;A&amp;quot;,&amp;quot;S&amp;quot;,&amp;quot;D&amp;quot;,&amp;quot;F&amp;quot;,&amp;quot;G&amp;quot;,&amp;quot;H&amp;quot;,&amp;quot;J&amp;quot;,&amp;quot;K&amp;quot;,&amp;quot;L&amp;quot;,&amp;quot;:\n;&amp;quot;,&amp;quot;\&amp;quot;\n&#39;&amp;quot;,{w:2.25},&amp;quot;Enter&amp;quot;],
-[{w:2.25},&amp;quot;Shift&amp;quot;,&amp;quot;Z&amp;quot;,&amp;quot;X&amp;quot;,&amp;quot;C&amp;quot;,&amp;quot;V&amp;quot;,&amp;quot;B&amp;quot;,&amp;quot;N&amp;quot;,&amp;quot;M&amp;quot;,&amp;quot;&amp;lt;\n,&amp;quot;,&amp;quot;&amp;gt;\n.&amp;quot;,&amp;quot;?\n/&amp;quot;,{w:1.75},&amp;quot;ShortShift&amp;quot;,&amp;quot;Fn&amp;quot;,{w:2.75,x:-2.75},&amp;quot;Shift&amp;quot;],
-[{w:1.25},&amp;quot;Ctrl&amp;quot;,{w:1.25},&amp;quot;Win&amp;quot;,{w:1.25},&amp;quot;Alt&amp;quot;,{a:7,w:6.25},&amp;quot;&amp;quot;,{a:4,w:1.25},&amp;quot;Alt&amp;quot;,{w:1.25},&amp;quot;Win&amp;quot;,{w:1.25},&amp;quot;Menu&amp;quot;,{w:1.25},&amp;quot;Ctrl&amp;quot;]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Note the following key definitions:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;{w:1.25},&amp;quot;Stepped&amp;quot;,{w:1.75,x:-1.25},&amp;quot;Caps Lock&amp;quot;
-{w:1.75},&amp;quot;ShortShift&amp;quot;,&amp;quot;Fn&amp;quot;,{w:2.75,x:-2.75},&amp;quot;Shift&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;What we are doing here is actually placing two keys in the same space.  So we are defining one key, and then we are defining the next key and are using a negative &lt;code&gt;x&lt;/code&gt; value to move it over top the previous key we defined.  The builder is smart enough to know what to do when you do this and it will union all the overlapping parts together to produce the required cutout to support the configuration.&lt;/p&gt;
-
-&lt;p&gt;Here is what this layout looks like when drawn with the default switch and stabilizer options:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://builder-docs.swillkb.com/images/pro-tips/multi-layout.png&#34; alt=&#34;multi-layouts&#34; title=&#34;Multiple Layout Support&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;save-a-dxf-with-units&#34;&gt;Save a DXF with Units&lt;/h2&gt;
-
-&lt;p&gt;One of the most common issues people have when working with the files output from the tool is &amp;ldquo;Why is my drawing so big?&amp;rdquo;.  Unfortunately, the DXF library I am working with is relatively old and does not support the &lt;code&gt;DXF 2007&lt;/code&gt; file format which includes the Units of Measure.  My tool does everything in Millimeters, but it is not able to specify the units when the file is exported to a DXF.  Since the units are not defined in the file, your CAD program will assume the default units defined in your CAD program.&lt;/p&gt;
-
-&lt;p&gt;To solve this problem, you need to open the file in a CAD program that can export the &lt;code&gt;DXF 2007&lt;/code&gt; format, specify the units as Millimeters and then save as a &lt;code&gt;DXF 2007&lt;/code&gt; file format.  &lt;a href=&#34;http://librecad.org/cms/home.html&#34; target=&#34;_blank&#34;&gt;LibreCAD&lt;/a&gt; is a free CAD software which I know supports the &lt;code&gt;DXF 2007&lt;/code&gt; file format.&lt;/p&gt;
-
-&lt;p&gt;Here is the process in LibreCAD to re-save the exported DXF file to the &lt;code&gt;DXF 2007&lt;/code&gt; file format.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Download the DXF version of your CAD.&lt;/li&gt;
-&lt;li&gt;Open it in LibreCAD&lt;/li&gt;
-&lt;li&gt;Navigate to: &lt;strong&gt;Edit&lt;/strong&gt; -&amp;gt; &lt;strong&gt;Current Drawing Preferences&lt;/strong&gt; (&lt;code&gt;Command + ,&lt;/code&gt; on a Mac)&lt;/li&gt;
-&lt;li&gt;Select &lt;strong&gt;Units&lt;/strong&gt; and change &lt;strong&gt;Main drawing unit&lt;/strong&gt; to &lt;strong&gt;Millimeter&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Click &lt;strong&gt;OK&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Navigate to: &lt;strong&gt;File&lt;/strong&gt; -&amp;gt; &lt;strong&gt;Save as&amp;hellip;&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Save the file with type &lt;strong&gt;Draw Exchange DXF 2007&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>The builder is a tool with a LOT of different options and possibilities. As a result, there are quite a few different tips and tricks that can/should be documented. If you know of additional tips which are not documented here, please contribute to the documentation.
+SVG to STL Conversion If you want to 3D print a prototype of your design, you will need to convert the 2-dimensional SVG to a 3-dimensional STL file format in order for your 3D printer to be able to work with it.</description>
     </item>
     
     <item>
@@ -415,10 +46,8 @@ Centers: &lt;code&gt;[7,7];[-7,7];[-7,-7];[7,-7]&lt;/code&gt;&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://builder-docs.swillkb.com/need-help/</guid>
-      <description>&lt;p&gt;We try to give a pretty complete overview of the tool and its functionality on this site, but I am sure we have not covered all of your questions.&lt;/p&gt;
-
-&lt;p&gt;If you have questions or you would like to come and join the conversation around this tool, come say &lt;em&gt;Hello&lt;/em&gt; in our &lt;a href=&#34;https://geekhack.org/index.php?topic=65189.0&#34; target=&#34;_blank&#34;&gt;GeekHack thread&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <description>We try to give a pretty complete overview of the tool and its functionality on this site, but I am sure we have not covered all of your questions.
+If you have questions or you would like to come and join the conversation around this tool, come say Hello in our GeekHack thread.</description>
     </item>
     
     <item>
@@ -427,66 +56,22 @@ Centers: &lt;code&gt;[7,7];[-7,7];[-7,-7];[7,-7]&lt;/code&gt;&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://builder-docs.swillkb.com/contribute/</guid>
-      <description>
-
-&lt;p&gt;The content of this website is maintained on Github at &lt;a href=&#34;https://github.com/swill/builder-docs&#34;&gt;github.com/swill/builder-docs&lt;/a&gt;, please feel free to contribute.  We will do our best to keep the content up-to-date with the functionality, but 100% coverage of the features will be a work in progress.&lt;/p&gt;
-
-&lt;h2 id=&#34;how-to-contribute&#34;&gt;How to Contribute&lt;/h2&gt;
-
-&lt;p&gt;To contribute, you will need to fork the Github repository &lt;a href=&#34;https://github.com/swill/builder-docs&#34;&gt;github.com/swill/builder-docs&lt;/a&gt;, and make changes in your own fork.&lt;br /&gt;
-&lt;img src=&#34;http://builder-docs.swillkb.com/images/contribute/github_fork.png&#34; alt=&#34;github_fork&#34; title=&#34;Fork on Github&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Changes can be done by editing the files directly in the Github UI in your fork.&lt;br /&gt;
-&lt;img src=&#34;http://builder-docs.swillkb.com/images/contribute/github_edit.png&#34; alt=&#34;github_edit&#34; title=&#34;Edit on Github&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Once finished editing the files, you will need to commit your changes.
-&lt;img src=&#34;http://builder-docs.swillkb.com/images/contribute/github_commit.png&#34; alt=&#34;github_commit&#34; title=&#34;Commit change&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Once finished making changes, create a new Pull Request to submit the changes back to &lt;code&gt;swill&lt;/code&gt;s repository.&lt;/p&gt;
-
-&lt;p&gt;Click the &lt;code&gt;New Pull Request&lt;/code&gt; button on the &lt;code&gt;Pull Requests&lt;/code&gt; tab.
-&lt;img src=&#34;http://builder-docs.swillkb.com/images/contribute/github_create_pr.png&#34; alt=&#34;github_create_pr&#34; title=&#34;Create Pull Request&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Click the &lt;code&gt;Create Pull Request&lt;/code&gt; button to submit the changes to my repository.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://builder-docs.swillkb.com/images/contribute/github_submit_pr.png&#34; alt=&#34;github_submit_pr&#34; title=&#34;Submit Pull Request&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Once the pull request has been reviewed, it will be approved and the changes will get published to the live site.&lt;/p&gt;
-
-&lt;h2 id=&#34;content-layout&#34;&gt;Content Layout&lt;/h2&gt;
-
-&lt;p&gt;Each page has its own Markdown file in the &lt;code&gt;./content/&lt;/code&gt; directory.  The name of the file will be used as the URL slug, so please use hyphens (&lt;code&gt;-&lt;/code&gt;) if you need a separator.&lt;/p&gt;
-
-&lt;p&gt;Each page has some metadata at the top of the Markdown file.  More details can be found in the &lt;a href=&#34;https://gohugo.io/content/front-matter/&#34;&gt;&lt;code&gt;front matter&lt;/code&gt; documentation&lt;/a&gt; for Hugo, but the main ones to note are the following:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;---
-title: The Page Title
-weight: 50
----
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The &lt;code&gt;title&lt;/code&gt; will be the title of the page.
-The &lt;code&gt;weight&lt;/code&gt; is used to determine the page order.&lt;/p&gt;
-
-&lt;p&gt;Review the other pages to better understand what values to use for the &lt;code&gt;weight&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;menu-entries&#34;&gt;Menu Entries&lt;/h2&gt;
-
-&lt;p&gt;The top level menu entries on the left are manually specified in the &lt;code&gt;./config.toml&lt;/code&gt; file.  The sub-menu items are automatically created based on the header elements on that page.&lt;/p&gt;
-
-&lt;p&gt;You would place something like the following in the menu section of the &lt;code&gt;./config.toml&lt;/code&gt; file.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;[[menu.main]]
-	name   = &amp;quot;New Top Level Menu&amp;quot;
-	url    = &amp;quot;page-url/&amp;quot;
-	weight = 50
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;div class=&#34;admonition note&#34;&gt;
-&lt;p class=&#34;admonition-title&#34;&gt;Note&lt;/p&gt;
-&lt;p&gt;The trailing &lt;code&gt;/&lt;/code&gt; is required for all links so I have more hosting options.&lt;/p&gt;
-&lt;/div&gt;
-</description>
+      <description>The content of this website is maintained on Github at github.com/swill/builder-docs, please feel free to contribute. We will do our best to keep the content up-to-date with the functionality, but 100% coverage of the features will be a work in progress.
+How to Contribute To contribute, you will need to fork the Github repository github.com/swill/builder-docs, and make changes in your own fork.
+Changes can be done by editing the files directly in the Github UI in your fork.</description>
+    </item>
+    
+    <item>
+      <title>Introduction</title>
+      <link>http://builder-docs.swillkb.com/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://builder-docs.swillkb.com/</guid>
+      <description>The documentation on this site is for the Plate &amp;amp; Case Builder available at builder.swillkb.com.
+builder.swillkb.com The Plate &amp;amp; Case Builder (builder) is a tool to aid in the design and creation of custom keyboards. The builder generates CAD files to be cut by a laser cutter.
+Keyboard layouts are created at keyboard-layout-editor.com (KLE) and the Raw data is copied.
+Then the layout is pasted into the builder.
+Then specify the details of the case.</description>
     </item>
     
   </channel>
