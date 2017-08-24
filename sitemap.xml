@@ -3,6 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://builder-docs.swillkb.com/</loc>
+  </url>
+  
+  <url>
     <loc>http://builder-docs.swillkb.com/units-dimensions/</loc>
   </url>
   
@@ -30,10 +34,6 @@
   <url>
     <loc>http://builder-docs.swillkb.com/</loc>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://builder-docs.swillkb.com/</loc>
   </url>
   
   <url>

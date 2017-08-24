@@ -11,6 +11,19 @@
     
     
     <item>
+      <title>Introduction</title>
+      <link>http://builder-docs.swillkb.com/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://builder-docs.swillkb.com/</guid>
+      <description>The documentation on this site is for the Plate &amp;amp; Case Builder available at builder.swillkb.com.
+builder.swillkb.com The Plate &amp;amp; Case Builder (builder) is a tool to aid in the design and creation of custom keyboards. The builder generates CAD files to be cut by a laser cutter.
+Keyboard layouts are created at keyboard-layout-editor.com (KLE) and the Raw data is copied.
+Then the layout is pasted into the builder.
+Then specify the details of the case.</description>
+    </item>
+    
+    <item>
       <title>Units &amp; Dimensions</title>
       <link>http://builder-docs.swillkb.com/units-dimensions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -59,19 +72,6 @@ If you have questions or you would like to come and join the conversation around
       <description>The content of this website is maintained on Github at github.com/swill/builder-docs, please feel free to contribute. We will do our best to keep the content up-to-date with the functionality, but 100% coverage of the features will be a work in progress.
 How to Contribute To contribute, you will need to fork the Github repository github.com/swill/builder-docs, and make changes in your own fork.
 Changes can be done by editing the files directly in the Github UI in your fork.</description>
-    </item>
-    
-    <item>
-      <title>Introduction</title>
-      <link>http://builder-docs.swillkb.com/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://builder-docs.swillkb.com/</guid>
-      <description>The documentation on this site is for the Plate &amp;amp; Case Builder available at builder.swillkb.com.
-builder.swillkb.com The Plate &amp;amp; Case Builder (builder) is a tool to aid in the design and creation of custom keyboards. The builder generates CAD files to be cut by a laser cutter.
-Keyboard layouts are created at keyboard-layout-editor.com (KLE) and the Raw data is copied.
-Then the layout is pasted into the builder.
-Then specify the details of the case.</description>
     </item>
     
   </channel>
